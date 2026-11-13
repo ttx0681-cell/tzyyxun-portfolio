@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- Static, seamless fractal noise tinted mocha; no raster image or animation. -->
+  <filter id="paper" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.62 0.78" numOctaves="3" seed="17" stitchTiles="stitch"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0.40
+                                          0 0 0 0 0.31
+                                          0 0 0 0 0.28
+                                          0.5 0.5 0.5 0 -0.4"/>
+  </filter>
+  <rect width="256" height="256" filter="url(#paper)"/>
+</svg>
