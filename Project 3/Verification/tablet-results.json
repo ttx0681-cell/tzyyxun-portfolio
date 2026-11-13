@@ -1,0 +1,180 @@
+﻿{
+    "result":  {
+                   "type":  "object",
+                   "value":  {
+                                 "viewport":  {
+                                                  "width":  768,
+                                                  "height":  1024
+                                              },
+                                 "passed":  35,
+                                 "total":  35,
+                                 "results":  [
+                                                 {
+                                                     "name":  "Five original cards remain",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Project 3 opens shared journal",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Correct title and accessible label",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Correct journal label",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Default and My Hero content hidden",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Five sections in correct order",
+                                                     "ok":  true,
+                                                     "detail":  [
+                                                                    "01 / PROJECT OVERVIEW",
+                                                                    "02 / CONCEPT \u0026 VISUAL NARRATIVE",
+                                                                    "03 / CREATIVE PROCESS",
+                                                                    "04 / FINAL SHOWCASE",
+                                                                    "05 / REFLECTION"
+                                                                ]
+                                                 },
+                                                 {
+                                                     "name":  "Four creative process stages",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Three narrative stages and sage titles",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Ten selected original process images load",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Original image proportions retained",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Full-size links point to original extracted images",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Responsive process gallery",
+                                                     "ok":  true,
+                                                     "detail":  2
+                                                 },
+                                                 {
+                                                     "name":  "Responsive information card",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "No Project 3 horizontal overflow",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Background scroll locked",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Journal scrolls vertically",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Only one original showcase video",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Native controls, inline, metadata and no autoplay or loop",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Original portrait dimensions and duration",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Portrait player not stretched or cropped",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Original showcase plays changing visible frames",
+                                                     "ok":  true,
+                                                     "detail":  {
+                                                                    "first":  {
+                                                                                  "time":  2,
+                                                                                  "visible":  0,
+                                                                                  "hash":  0
+                                                                              },
+                                                                    "playing":  {
+                                                                                    "time":  3.061583,
+                                                                                    "visible":  3254,
+                                                                                    "hash":  -2121731547
+                                                                                },
+                                                                    "later":  {
+                                                                                  "time":  10,
+                                                                                  "visible":  3123,
+                                                                                  "hash":  -142267779
+                                                                              }
+                                                                }
+                                                 },
+                                                 {
+                                                     "name":  "Close button pauses Project 3 and restores focus",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Pawfect Match still opens",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "All ten Pawfect screenshots retained",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Approved Pawfect responsive pairing",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Pawfect View Design still works",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "My Hero journal still opens exclusively",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Five My Hero storyboard pages retained",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "My Hero storyboard viewer works",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "My Hero original working video still plays",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "My Hero still pauses on close",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Project 4 original modal preserved",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Project 5 original modal preserved",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Main sections and Artwork Gallery retained",
+                                                     "ok":  true
+                                                 },
+                                                 {
+                                                     "name":  "Page no horizontal overflow",
+                                                     "ok":  true
+                                                 }
+                                             ]
+                             }
+               }
+}

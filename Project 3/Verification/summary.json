@@ -1,0 +1,35 @@
+﻿[
+    {
+        "Viewport":  "desktop",
+        "Passed":  35,
+        "Total":  35,
+        "Failures":  [
+
+                     ],
+        "ScriptErrors":  [
+
+                         ]
+    },
+    {
+        "Viewport":  "tablet",
+        "Passed":  35,
+        "Total":  35,
+        "Failures":  [
+
+                     ],
+        "ScriptErrors":  [
+
+                         ]
+    },
+    {
+        "Viewport":  "mobile",
+        "Passed":  35,
+        "Total":  35,
+        "Failures":  [
+
+                     ],
+        "ScriptErrors":  [
+
+                         ]
+    }
+]

@@ -1,0 +1,597 @@
+﻿[
+    {
+        "RelativePath":  "Artwork-Character Design.jpg",
+        "Length":  99351,
+        "SHA256":  "7D99F92B604241000F7DD8B657290702120C37F288B497052B6D026C4ED7AE33"
+    },
+    {
+        "RelativePath":  "Artwork-MyHero.png",
+        "Length":  1805421,
+        "SHA256":  "4FB55CC8B0C1A820B11542E2882F8DBB3FCDCBB99A5976A04156B9696BF5227E"
+    },
+    {
+        "RelativePath":  "Artwork-Projection Mapping.png",
+        "Length":  1876423,
+        "SHA256":  "1C8AB51A378923A7DCEFD21893ED87A72589A8BB337E496F29770B224F7964D8"
+    },
+    {
+        "RelativePath":  "Artwork-Typography.png",
+        "Length":  55138,
+        "SHA256":  "76EF8A4ACC0CEC82D6B489F0716FC1B4930CF42F20BBC166D6FA61A3B0998062"
+    },
+    {
+        "RelativePath":  "Artwork-UIUX Design.png",
+        "Length":  1524896,
+        "SHA256":  "D0DAD774929B97B018C1479897A77E01097EB990EB07F21385417114B3BA4167"
+    },
+    {
+        "RelativePath":  "Cat illustration.png",
+        "Length":  2693560,
+        "SHA256":  "364470FE925D1767B31223C9CD14F0E009D609AA3F791712854C25B3B50F7E1F"
+    },
+    {
+        "RelativePath":  "index.html",
+        "Length":  48225,
+        "SHA256":  "D284350429CE0D6C96544085B06F14F68FC7E6D8BA34557A8606AED7C08285BD"
+    },
+    {
+        "RelativePath":  "layout references.png",
+        "Length":  1960673,
+        "SHA256":  "FB660D5559F19ED3FC9DBCBE5E6BC30B65E14EA53FE6654C78474256DC9F3538"
+    },
+    {
+        "RelativePath":  "paper-grain.svg",
+        "Length":  685,
+        "SHA256":  "4F97FDE73D8FE46480981065EE2FE56E88458C54A8D875B5ED978C09EE7B6C80"
+    },
+    {
+        "RelativePath":  "Portrait.jpg",
+        "Length":  96543,
+        "SHA256":  "2B9ED382125F7DFA3CCE8BD91704ABF4822F1CB82ADA60920178CB25B8136196"
+    },
+    {
+        "RelativePath":  "references 2.png",
+        "Length":  1947140,
+        "SHA256":  "C80F92AF8C750364B9CD0F2534ACBAF633DBB34A74C8C60C6C9FA4EF250867B2"
+    },
+    {
+        "RelativePath":  "references pawfect modal.png",
+        "Length":  3057122,
+        "SHA256":  "FC2C03AF81512D43BBED8C00C4538262BC45B2967A87F442A060C40DCC439AB2"
+    },
+    {
+        "RelativePath":  "references.png",
+        "Length":  2179006,
+        "SHA256":  "DA666D1458358138AA3D3A3075B1860A7BA1E359C3AE7D674FCF040D9FBD9FFE"
+    },
+    {
+        "RelativePath":  "script.js",
+        "Length":  31212,
+        "SHA256":  "2BF33C5D11E20B6A9CFD5FC142AD8D2A5FBBDA7BFF52BA9E766BF3B5F2031817"
+    },
+    {
+        "RelativePath":  "style.css",
+        "Length":  99920,
+        "SHA256":  "873053415B558AD33B9B07C198526F785D8E849CBCD23EA6B4BC3ECF67F2434A"
+    },
+    {
+        "RelativePath":  "usm.png",
+        "Length":  3341736,
+        "SHA256":  "4B82A91135841DC39E67D3282B69532ABFD27D029DE9C374BE07542D791751A9"
+    },
+    {
+        "RelativePath":  "watercolor texture.jpg",
+        "Length":  66705,
+        "SHA256":  "F432C5D2EFC44E7F65E384F914F7D2B7E16AB6EBFA7FCC202066D5F64EABADF9"
+    },
+    {
+        "RelativePath":  "fonts\\Caveat-Bold.ttf",
+        "Length":  251256,
+        "SHA256":  "F4365D9874C1B64026ACA48786CF835A5DECF2C740C06DE04DBB05CE8C93FF37"
+    },
+    {
+        "RelativePath":  "fonts\\Caveat-OFL.txt",
+        "Length":  4385,
+        "SHA256":  "1F9D81D094273D82F3898A1EE8B598A717D050ECBF5FF7BEDE105B704880157B"
+    },
+    {
+        "RelativePath":  "fonts\\DynaPuff-OFL.txt",
+        "Length":  4492,
+        "SHA256":  "AD0BC2AE83F6DBF6F3EDDE26752324260C2FBAF9CC021748D363A879DD5B749C"
+    },
+    {
+        "RelativePath":  "fonts\\DynaPuff-Variable.ttf",
+        "Length":  212600,
+        "SHA256":  "C3752FC6DD8AAA46A88637F061A9A4E6AB44C02C5F0AFD65528B91AE8FF6F948"
+    },
+    {
+        "RelativePath":  "fonts\\FingerPaint-OFL.txt",
+        "Length":  4475,
+        "SHA256":  "D336C098EA798BF14DE111CD90DFF7D6BC340852405246511345D0F8564FE76E"
+    },
+    {
+        "RelativePath":  "fonts\\FingerPaint-Regular.ttf",
+        "Length":  107440,
+        "SHA256":  "FCE000AE028B09CA53949172A838282C678796E1542D259E6DA373E257377FC8"
+    },
+    {
+        "RelativePath":  "fonts\\Itim-OFL.txt",
+        "Length":  4436,
+        "SHA256":  "1F00D1F970B4EA469B6936E599B599BB217EDAAB792E586658EF2E71CF438685"
+    },
+    {
+        "RelativePath":  "fonts\\Itim-Regular.ttf",
+        "Length":  353128,
+        "SHA256":  "7D10DAD1FB4A5172448458E2B4EC8F73BDE34ED02EAEF3D67BFC07B0A7482971"
+    },
+    {
+        "RelativePath":  "fonts\\Knewave-OFL.txt",
+        "Length":  4419,
+        "SHA256":  "14B3FBD06078A869CF2BA96E6DACB852D373703C86CA7AD54A4CDD6E20FBAB19"
+    },
+    {
+        "RelativePath":  "fonts\\Knewave-Regular.ttf",
+        "Length":  32460,
+        "SHA256":  "ED3BAC761D755B89AB3082C844D4A623D63C7D6EEF85D22BA1FB6C680E6A4436"
+    },
+    {
+        "RelativePath":  "fonts\\PatrickHand-OFL.txt",
+        "Length":  4376,
+        "SHA256":  "377F4F9C19E935228552478EB68CC2ED82910988A60BA60E2AC73B09F32D02D1"
+    },
+    {
+        "RelativePath":  "fonts\\PatrickHand-Regular.ttf",
+        "Length":  214772,
+        "SHA256":  "0F173B3E6CB6D1AF25BABF7F0057C5AC4EE11F9992B0469BB817E967EF4AD0FC"
+    },
+    {
+        "RelativePath":  "Icon\\AE-transparent.png",
+        "Length":  5108,
+        "SHA256":  "0A5482E19D17CE15187CE0255372480EF29285F5861A3F4C56BB76F5BD2BF563"
+    },
+    {
+        "RelativePath":  "Icon\\AE.png",
+        "Length":  3044,
+        "SHA256":  "F376743920AAB02812315385FAADED8A1BC5E344939505068D3A62DFB25352F6"
+    },
+    {
+        "RelativePath":  "Icon\\AI-transparent.png",
+        "Length":  10983,
+        "SHA256":  "5080A4D81BD0D215A9B614EDBEA5908549452B79BEA5C283AE66B26A53E1B6C0"
+    },
+    {
+        "RelativePath":  "Icon\\AI.png",
+        "Length":  6033,
+        "SHA256":  "67FD36BA97C314D2EA2EF90D47039036D4DD4FA9EC83F5BA4B741CF3F0CDADCC"
+    },
+    {
+        "RelativePath":  "Icon\\Capcut-alpha.png",
+        "Length":  11620,
+        "SHA256":  "A0596E9B4CB8F4C9E8E54C40BC560B3097018DEE719A14BB5D78CFD40A32C0DD"
+    },
+    {
+        "RelativePath":  "Icon\\Capcut-cutout.png",
+        "Length":  14033,
+        "SHA256":  "328A1EBF23D173FBA1A84A0DC74E0AFF96298113D92B015D71134696866D7F86"
+    },
+    {
+        "RelativePath":  "Icon\\Capcut-transparent.png",
+        "Length":  14033,
+        "SHA256":  "328A1EBF23D173FBA1A84A0DC74E0AFF96298113D92B015D71134696866D7F86"
+    },
+    {
+        "RelativePath":  "Icon\\Capcut.png",
+        "Length":  6742,
+        "SHA256":  "0B906552A4F0B168A15627A97E4B8B77FE43BB6885C68470ECD10FD7F0F20623"
+    },
+    {
+        "RelativePath":  "Icon\\Figma-transparent.png",
+        "Length":  67037,
+        "SHA256":  "14D36C6A8824BEA498854B9777066CF7038FA929FC753BBFC4EFAD751591FB3F"
+    },
+    {
+        "RelativePath":  "Icon\\Figma.jpg",
+        "Length":  14856,
+        "SHA256":  "8DF85A23E530512B09C1CBE375C1C2211F3869FCCEA2818BDFBA93B084D3CCCD"
+    },
+    {
+        "RelativePath":  "Icon\\ID-transparent.png",
+        "Length":  16857,
+        "SHA256":  "ACA754B3CE4CB5752EA9343E63C4C1D221CFA98CEB6184CAD63D4CC1C871B76C"
+    },
+    {
+        "RelativePath":  "Icon\\ID.png",
+        "Length":  5667,
+        "SHA256":  "A83B383D7FDA1F620507D2FD5774CC78795A572B765715A02D6C1B2A0A708A7E"
+    },
+    {
+        "RelativePath":  "Icon\\PS-transparent.png",
+        "Length":  11693,
+        "SHA256":  "B00B16D21BEE6162EF85B25078503EC730136460141CB3C9F20C745F503EA8A3"
+    },
+    {
+        "RelativePath":  "Icon\\PS.png",
+        "Length":  6250,
+        "SHA256":  "8428C9583C8A25BAD7C45698E92A26FD79E89435CBBF26DAF2585552CEF5A0B5"
+    },
+    {
+        "RelativePath":  "Icon\\TD-transparent.png",
+        "Length":  12510,
+        "SHA256":  "05CB9B90585C9FE2EF443D270C0B06B09F68DA4D9EE4893BA5F494E35120EA47"
+    },
+    {
+        "RelativePath":  "Icon\\TD.png",
+        "Length":  6974,
+        "SHA256":  "24C4EC9973AAD20595FF5A1BC92CC32D22F4AC5D4AD3D2ED30E423F926DFF38E"
+    },
+    {
+        "RelativePath":  "Icon\\VS-alpha.png",
+        "Length":  73061,
+        "SHA256":  "6A8FD9E5A60968750DBE3EA6C9EBEAC428E945E07C7C43920FE6B3B727219AF6"
+    },
+    {
+        "RelativePath":  "Icon\\VS-cutout.png",
+        "Length":  73028,
+        "SHA256":  "1051C6FEC1284710CF12DA59E5C1570504B897CEB1C0F93D719AE393ECB64B15"
+    },
+    {
+        "RelativePath":  "Icon\\VS-transparent.png",
+        "Length":  73028,
+        "SHA256":  "1051C6FEC1284710CF12DA59E5C1570504B897CEB1C0F93D719AE393ECB64B15"
+    },
+    {
+        "RelativePath":  "Icon\\VS.jpg",
+        "Length":  14181,
+        "SHA256":  "FB22BF3DB27F3AD32F9299C4E75DCEFBD3245AC115CDB5DC0A58ADAFA048AD12"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\desktop-gallery.png",
+        "Length":  827340,
+        "SHA256":  "26908AB718B5C589F50563B851EC5C9837855C42011B9B35C2DFA7891357A4E0"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\desktop-results.json",
+        "Length":  9954,
+        "SHA256":  "FD852BAA6BADB48ED68A8E533A4C5C505559AD23927792D224AD159616C764B2"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\gallery-tests.js",
+        "Length":  4718,
+        "SHA256":  "AAC979B80AF363FC7F204729C2DEB4D074E52AA1AD9ED08AF89799BD0DFEE840"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\integrity-results.json",
+        "Length":  372,
+        "SHA256":  "A1980605C41C3935E97D4493532E69259914E01E998A69F734B000471F5E9557"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\mobile-gallery.png",
+        "Length":  322562,
+        "SHA256":  "B129240712CD10262172674797CA34C6698E621459DC6DF79269E38CF9E1E3A4"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\mobile-results.json",
+        "Length":  9364,
+        "SHA256":  "47C5D8CEF299848466BAFB60CE6989ADB1DDBAE233919020BC73F3BE89D439D0"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\preserved-vscode-css-backup.txt",
+        "Length":  99801,
+        "SHA256":  "C23CC6CBE2EDA852E84D339C093F1D485597C5727B595C0EBA1D1AFDE6643BA0"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\prior-recovered-copy-manifest.json",
+        "Length":  16965,
+        "SHA256":  "27513E90C7E69BE9EE4F7FA65F91C324016063D55561B16EADFD1713C9B5303B"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\README.md",
+        "Length":  2911,
+        "SHA256":  "9C39BA54A04873463891FA72B851F9C312A7B73B9264B77E8E826C9AA87F5E45"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\removed-conflicting-overrides.css",
+        "Length":  1209,
+        "SHA256":  "5713844D94ABAE1A087AC37CC13E840E93DDE08B2B26A7B7A8FB94FA32F62C60"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\summary.json",
+        "Length":  618,
+        "SHA256":  "5BE7D801CF04B5EADDC52404F0BCFF8D4ECFCA7A3B138732A1E14A8026661554"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\tablet-gallery.png",
+        "Length":  630649,
+        "SHA256":  "8709E96A45A4216ED6037153F83192F6ADD1729D293DB2D02B2F52AF23E6F646"
+    },
+    {
+        "RelativePath":  "Pawfect Gallery Recovery\\tablet-results.json",
+        "Length":  9953,
+        "SHA256":  "EC6AE452158F58E5EFF81F203F179D69DCC8BD0EF7C25404F6EC41E7AC990F06"
+    },
+    {
+        "RelativePath":  "Project 1\\08e1894d-597c-48de-9d0d-b5620e8da20a.png",
+        "Length":  1828294,
+        "SHA256":  "72241CC64F51FF66260CE0D6E305D0C782A16FECD2EFB947C2584DB7B20F5C9F"
+    },
+    {
+        "RelativePath":  "Project 1\\0b06b9b0-f414-406d-b90c-bef7d1b8848a.png",
+        "Length":  1561986,
+        "SHA256":  "4AB416207DE927401BD80403EDD99AC95188BAE5283B850D49DB47F6257BF02F"
+    },
+    {
+        "RelativePath":  "Project 1\\274cc0d1-519f-4f54-87a4-f3418e2f4a0e.png",
+        "Length":  2143576,
+        "SHA256":  "178070CA093E92EC0769DDE895564E93FD4C7BC791E3E391F4F05738C2FE7D6A"
+    },
+    {
+        "RelativePath":  "Project 1\\2e0b6107-af7c-4989-b9a5-112af92fdc70.png",
+        "Length":  1604037,
+        "SHA256":  "F28C4709F68DA92A521CA5397F29E7B2395DE5288757A9302B3E4622F334BE44"
+    },
+    {
+        "RelativePath":  "Project 1\\58aeed1a-bf8c-44cb-bd41-48a65d336ef1.png",
+        "Length":  1577665,
+        "SHA256":  "2E02B93CC040403734555EE63559CD1717B9340733CADAF4722FE80DA0DE6365"
+    },
+    {
+        "RelativePath":  "Project 1\\68067760-8a4b-43bb-9c9f-4724da369867.png",
+        "Length":  1393303,
+        "SHA256":  "BF577FAE28F74695BDD0B3F6F6D5356FD1E67B62BC627A99CC38009F80287E63"
+    },
+    {
+        "RelativePath":  "Project 1\\975f1278-0253-4fb2-ab7b-197675e2263b.png",
+        "Length":  1702313,
+        "SHA256":  "231431B7DC2C2CFC793799A5228BF6D7FDF2F678729A44ABA9A5A2AF4FE39FDF"
+    },
+    {
+        "RelativePath":  "Project 1\\ad0b0c36-bddd-409e-aab7-6f93689a072e.png",
+        "Length":  1332582,
+        "SHA256":  "B20F574C8B33DA78B71EC9C36619AC03A53CE1274E3713CD2340BF23969ABEB6"
+    },
+    {
+        "RelativePath":  "Project 1\\d1d2a577-e721-458a-9652-2387071803e1.png",
+        "Length":  1664354,
+        "SHA256":  "E40406ED71ACB2CEBB824C492617599E4A05EA5FDCE520670DDEF3161BE79555"
+    },
+    {
+        "RelativePath":  "Project 1\\ddaa37b3-fcd8-4fe6-a2d5-f0f31ed6c4dd.png",
+        "Length":  1836391,
+        "SHA256":  "82B008F1555C1DF3A3891016F8321E8A18C993937580B333B8C0D6A1C93B46A5"
+    },
+    {
+        "RelativePath":  "Project 1\\fac61f7a-56d4-4d53-8f55-826ea8b07ded.png",
+        "Length":  1575134,
+        "SHA256":  "579A82470E4995B545A9C63F581E62A1CA6281D33B28F183516C80784EE82B0D"
+    },
+    {
+        "RelativePath":  "Project 1\\Screenshot 2025-11-28 225440.png",
+        "Length":  67126,
+        "SHA256":  "47018DA02F36083667814CD04565FF4D11497B28CB9D46DF4ABC1E30F5CE7F0C"
+    },
+    {
+        "RelativePath":  "Project 1\\Screenshot 2025-11-28 225527.png",
+        "Length":  96833,
+        "SHA256":  "DDED0FA9A2962C442CCA3B94E478F1FC7708F8D4A5F28C70A248E2763236D6C0"
+    },
+    {
+        "RelativePath":  "Project 2\\My Hero-Grandpa-browser.mp4",
+        "Length":  134468880,
+        "SHA256":  "92CA62D232DB5C480A301C7B2D40858E1C952068087BE86D1A7A411810C3521A"
+    },
+    {
+        "RelativePath":  "Project 2\\My Hero-Grandpa.docx",
+        "Length":  6386149,
+        "SHA256":  "71CE84A8BA9A95F4B18C787E6A124C481995C2880256327D5F024058770DBACA"
+    },
+    {
+        "RelativePath":  "Project 2\\My Hero-Grandpa.mp4",
+        "Length":  141114294,
+        "SHA256":  "83887627AC78A9E3B8B9428031F90617C1FAAFCAC43F73321BBE46A294DD381E"
+    },
+    {
+        "RelativePath":  "Project 2\\My Hero-Grandpa.pdf",
+        "Length":  1295176,
+        "SHA256":  "150AD4468F30B18E3642F5EC382B1E7583E68B96B917AADEBB31E34EEE132C1A"
+    },
+    {
+        "RelativePath":  "Project 2\\Storyboard-01.png",
+        "Length":  1419244,
+        "SHA256":  "13E1320BAAC1C47163863A0D1D65C6919D39445A823E2020FD154406C428EBF2"
+    },
+    {
+        "RelativePath":  "Project 2\\Storyboard-02.png",
+        "Length":  1202064,
+        "SHA256":  "250B7C74810B738A9DEEE9A6A97223DE8CB90B9549EFE46BFE769C4ED3CD6809"
+    },
+    {
+        "RelativePath":  "Project 2\\Storyboard-03.png",
+        "Length":  1330718,
+        "SHA256":  "640E8047DF7103A8BBA4EED589C3D1A2249443A310D2D9F4BC5736D281D5ED85"
+    },
+    {
+        "RelativePath":  "Project 2\\Storyboard-04.png",
+        "Length":  1264170,
+        "SHA256":  "C965E9EE8F4413427D39633364BFE404B416C1039BA01406ABC74A09689F4DAE"
+    },
+    {
+        "RelativePath":  "Project 2\\Storyboard-05.png",
+        "Length":  1006175,
+        "SHA256":  "9A6605E4CEE4879715140D0E6C7815C4E8AE77050B9B0C35ABC4AD3A6F29C8E4"
+    },
+    {
+        "RelativePath":  "Project 2\\storyboard-recovery-map.json",
+        "Length":  1120,
+        "SHA256":  "2C32999608AD63A881695024E6D533C0036A8A330B3A26F1329F091928A179DC"
+    },
+    {
+        "RelativePath":  "Project 2\\Original Embedded Images\\image1.png",
+        "Length":  145609,
+        "SHA256":  "06E8DD50B76AD5370A09D4E05845FB7BD78405024222BD76AAFFF873F7004D65"
+    },
+    {
+        "RelativePath":  "Project 2\\Original Embedded Images\\image2.png",
+        "Length":  1419244,
+        "SHA256":  "13E1320BAAC1C47163863A0D1D65C6919D39445A823E2020FD154406C428EBF2"
+    },
+    {
+        "RelativePath":  "Project 2\\Original Embedded Images\\image3.png",
+        "Length":  1202064,
+        "SHA256":  "250B7C74810B738A9DEEE9A6A97223DE8CB90B9549EFE46BFE769C4ED3CD6809"
+    },
+    {
+        "RelativePath":  "Project 2\\Original Embedded Images\\image4.png",
+        "Length":  1330718,
+        "SHA256":  "640E8047DF7103A8BBA4EED589C3D1A2249443A310D2D9F4BC5736D281D5ED85"
+    },
+    {
+        "RelativePath":  "Project 2\\Original Embedded Images\\image5.png",
+        "Length":  1264170,
+        "SHA256":  "C965E9EE8F4413427D39633364BFE404B416C1039BA01406ABC74A09689F4DAE"
+    },
+    {
+        "RelativePath":  "Project 2\\Original Embedded Images\\image6.png",
+        "Length":  1006175,
+        "SHA256":  "9A6605E4CEE4879715140D0E6C7815C4E8AE77050B9B0C35ABC4AD3A6F29C8E4"
+    },
+    {
+        "RelativePath":  "Project 3\\Mapping final showcase.mp4",
+        "Length":  3398086,
+        "SHA256":  "C49386CDAC17A2DDAC5D644273E38C83DE95630F4590F436979F35002D1006D0"
+    },
+    {
+        "RelativePath":  "Project 3\\Projection Mapping Photo setup\u0026process.docx",
+        "Length":  3385765,
+        "SHA256":  "87AF356528F695A7C282A135DA37D4E51E7A1962207FB1C5294EA9FB6DEA36BB"
+    },
+    {
+        "RelativePath":  "Project 3\\Projection Mapping.docx",
+        "Length":  164786,
+        "SHA256":  "FA506BC597FDB921747D9D16390C477C675D72B6B991246E9FADDAC9F5AD0F74"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\desktop-about.png",
+        "Length":  1275917,
+        "SHA256":  "D6E87EA1EF473FE2DF50D190D27C697C94209ECC8595190A645B37C695E73D6E"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\desktop-contact.png",
+        "Length":  905596,
+        "SHA256":  "4EFF598B7B2A931EE1B315A64350D884064EAB4C9AD41C6FB4090E71C919E68E"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\desktop-home.png",
+        "Length":  1427037,
+        "SHA256":  "4456A391D4D5B66BEE864C53A83195D6460E049AAFE037049370371052382AAE"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\desktop-process.png",
+        "Length":  1015765,
+        "SHA256":  "4176CEDC9038E008A67FBF3D24BBB204B4492194D840782457A78E3F117C5C62"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\desktop-projects.png",
+        "Length":  877795,
+        "SHA256":  "8082768A1F15D9EEF7933E3C3FE0243A0E1F0425BE6E59984BCD3CFB62EFC2BC"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\desktop-results.json",
+        "Length":  14122,
+        "SHA256":  "CF447FB7ED948949165CD432097818949B6EDDA4972C17DDB123C61748A2E10A"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\mobile-about.png",
+        "Length":  316502,
+        "SHA256":  "2F9B17F74D329FF02322160BF964FD17A8EB64AF738FD501829F2DBBC0602AF5"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\mobile-contact.png",
+        "Length":  288665,
+        "SHA256":  "0CA4102E4638CED7AA83B1295C02B52BED1BFC83A51B28D8644B81BBD41DB878"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\mobile-home.png",
+        "Length":  350873,
+        "SHA256":  "B0C79182646B02B1BEF0081A0FAA9CDB4AEEEA49DCCBF2A43E4CEB7D93CB5F1E"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\mobile-process.png",
+        "Length":  315483,
+        "SHA256":  "E496DE76D8C0EC2CB0CCCB4B2C2F8A6AADD7E17415FD585AF50E889FBE16E4E8"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\mobile-projects.png",
+        "Length":  287367,
+        "SHA256":  "CFAFBD864EE67621F2563324BC194275C6F6402B721DA84F56D8138D46D7F938"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\mobile-results.json",
+        "Length":  14117,
+        "SHA256":  "76B45C810036123C6AC52D537A64ADC5385603E9ADBE64FBA0B599698AA23F94"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\original-integrity.json",
+        "Length":  319,
+        "SHA256":  "7666F6AB174C2004194F063EB9C2A33BE800A96968E3B8D605056E5FD11411C4"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\run-whole-site-checks.ps1",
+        "Length":  4097,
+        "SHA256":  "63E71B18B674F7E706F1065015385FD465D2E1BB9ED2A9384ACC6E984081BB47"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\save-audit.ps1",
+        "Length":  3721,
+        "SHA256":  "B11D537523771576456BF4C25592FD0713E194F180863BA9C88CBD5B950D7989"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\section-provenance.json",
+        "Length":  25769,
+        "SHA256":  "5C246354D9793770FF4AE60D94A87FC33DAA0573E3BBE16C393BC023E9BAB7D8"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\summary.json",
+        "Length":  618,
+        "SHA256":  "16085C7F3B8958FE10398FD95E35751FB77AED7C907166FE8559DE699817348D"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\tablet-about.png",
+        "Length":  914130,
+        "SHA256":  "22555046D811E6CD5F11EAE48F4357FA65BBAABFEB5F7A01F14120EC72253CC2"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\tablet-contact.png",
+        "Length":  658409,
+        "SHA256":  "AC542F77984A7FEB48DBE510A40734579FA190827995C7E56328D7F229C32600"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\tablet-home.png",
+        "Length":  872480,
+        "SHA256":  "CA23841A39022F9EA4E4B7EEEE666B71F5CD713B973DAEF8E0390FD6EECACB3B"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\tablet-process.png",
+        "Length":  724310,
+        "SHA256":  "E61FB57E006D4F0182AC4CBFE5D58DEFDC6B5131F9C38E3A8E505541594A8DF6"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\tablet-projects.png",
+        "Length":  556559,
+        "SHA256":  "C5E77A232DECFEDAF45D836BE4ADFDF72627FC746023B0F5DD44C3B648C4EF38"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\tablet-results.json",
+        "Length":  13589,
+        "SHA256":  "62C5C3B9BE23180FA24F1B8DFF006DDAB594671CAF0641950E3F6C8970A7B86E"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\WHOLE-SITE-RECOVERY-AUDIT.md",
+        "Length":  6318,
+        "SHA256":  "002BBE5AC8D9208F0143718BDEAD508EF54F3DDA5A170EFE843E2DF5FF582D02"
+    },
+    {
+        "RelativePath":  "Whole Site Recovery Audit\\whole-site-tests.js",
+        "Length":  5335,
+        "SHA256":  "D8827FECCEA957A4CF57617CBF9137F1700133F37031CA4B30715A35AC28906E"
+    }
+]
