@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A New Media & Technology student portfolio. Explore selected projects, creative process, and contact information.">
+  <title>Your Name — Creative Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="TzyyXun, home">TX<span> / portfolio</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span></button>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#home" aria-current="location">HOME</a><a href="#about">ABOUT</a><a href="#projects">PROJECTS</a><a href="#process">PROCESS</a><a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home">
+      <!-- Home editorial composition with existing watercolor cat artwork. -->
+      <div class="hero editorial-hero section-wrap">
+      <div class="hero-copy">
+        <h1><span>A Curious Mind,</span><span>A Creative Eye</span><span>Ideas In Motion</span></h1>
+        <div class="hero-introduction">
+        <p class="intro">Welcome to my little creative corner! A space where ideas take shape, stories come alive, and curiosity leads the way. Take a look around and explore what I've been creating.</p>
+        </div>
+        <a class="button" href="#projects">EXPLORE MY WORK <span aria-hidden="true">&#8599;</span></a>
+      </div>
+      <figure class="hero-illustration">
+        <img src="Cat%20illustration.png" width="1536" height="1024" alt="Two watercolor cats resting among soft sage green leaves" fetchpriority="high" decoding="async">
+      </figure>
+      </div>
+    </section>
+
+    <section id="about" class="about section-wrap" aria-labelledby="about-title">
+      <div class="scrapbook-intro">
+        <div class="scrapbook-copy">
+          <p class="eyebrow">01 / ABOUT ME</p>
+          <h2 id="about-title">A little more<br>about me.</h2>
+          <h3>Hello, I'm TzyyXun!</h3>
+          <p>I'm a New Media &amp; Technology student at Universiti Sains Malaysia (USM), interested in visual design, interactive experiences, and creative storytelling.</p>
+          <p>I enjoy experimenting with creative ideas and bringing them to life through design and technology. I believe creativity is about exploring possibilities, learning through experimentation, and creating meaningful connections.</p>
+        </div>
+        <div class="scrapbook-collage" aria-label="Personal scrapbook image placeholders">
+          <div class="scrapbook-photo-stack">
+          <!-- Replace each .scrapbook-image div with an img using the same class and descriptive alt text. -->
+          <figure class="scrapbook-polaroid">
+            <button type="button" class="scrapbook-photo-button" aria-label="Bring portrait to front" aria-pressed="true"></button>
+            <span class="scrapbook-tape" aria-hidden="true"></span>
+            <div class="scrapbook-image portrait-slot"><img src="Portrait.jpg" alt="TzyyXun smiling and holding up two peace signs" loading="lazy" decoding="async"></div>
+            <figcaption>my little corner</figcaption>
+          </figure>
+          <figure class="scrapbook-artwork">
+            <button type="button" class="scrapbook-photo-button" aria-label="Open mini artwork gallery and bring artwork to front" aria-pressed="false" aria-haspopup="dialog" aria-controls="artwork-gallery"></button>
+            <div class="scrapbook-image artwork-slot"><img src="Artwork-MyHero.png" alt="My Hero short film artwork" loading="lazy" decoding="async"></div>
+            <figcaption>made with curiosity</figcaption>
+          </figure>
+          <svg class="scrapbook-botanical" viewBox="0 0 100 180" fill="none" aria-hidden="true"><path d="M30 174Q65 100 63 12" stroke="currentColor" stroke-width="2"/><g fill="currentColor" opacity=".65"><path d="M61 44Q24 36 36 12Q63 18 61 44M62 69Q95 57 91 34Q64 36 62 69M55 101Q19 91 26 67Q53 70 55 101M47 126Q85 118 84 91Q55 93 47 126M36 153Q7 144 12 119Q39 122 36 153"/></g></svg>
+          </div>
+          <span class="scrapbook-margin-note"><span>A few pieces of my world...</span></span>
+        </div>
+      </div>
+      <div class="scrapbook-pages">
+        <p class="scrapbook-prompt">Pick a page to discover more about me.</p>
+        <div class="scrapbook-cards" role="group" aria-label="Discover more about me">
+          <div class="scrapbook-accordion-item">
+          <button type="button" class="scrapbook-card education-card" id="education-card" aria-expanded="false" aria-controls="education-panel">
+            <span class="scrapbook-card-top"><span>01</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 18 20-10 20 10-20 10L4 18Zm8 5v12q12 9 24 0V23M44 18v17m-3 3 3-3 3 3"/></svg></span>
+            <span class="scrapbook-card-title">EDUCATION</span><span class="scrapbook-card-subtitle">My learning journey</span><span class="scrapbook-card-action" aria-hidden="true">Open page <span>＋</span></span>
+          </button>
+        <div class="scrapbook-panel" id="education-panel" role="region" aria-labelledby="education-card" inert>
+          <div class="scrapbook-panel-clip">
+            <div class="scrapbook-panel-paper education-paper">
+              <div class="education-copy">
+                <p class="eyebrow education-label">01 / EDUCATION</p>
+                <h3 class="education-heading">My Learning Journey</h3>
+                <h4 class="education-university">Universiti Sains Malaysia (USM)</h4>
+                <p class="education-school">School of the Arts</p>
+                <p class="education-programme">Bachelor of Fine Arts in New Media Design and Technology</p>
+                <p class="education-period">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M7.5 3v4m9-4v4M3.5 10h17M8 14h2m4 0h2m-8 3h2"/></svg>
+                  <span>2024 – 2028 (Expected Graduation)</span>
+                </p>
+                <p class="education-description">Exploring visual design, digital media, interactive experiences, animation, and creative storytelling through hands-on projects.</p>
+              </div>
+              <div class="education-keepsake">
+                <figure class="education-campus">
+                  <span class="education-washi" aria-hidden="true"></span>
+                  <img src="usm.png" alt="Watercolor illustration of the Universiti Sains Malaysia entrance sign surrounded by green trees and flowering plants" width="1536" height="1024" loading="lazy" decoding="async">
+                  <figcaption>USM ♡</figcaption>
+                </figure>
+                <svg class="education-botanical" viewBox="0 0 90 125" fill="none" aria-hidden="true"><path d="M15 117Q47 79 68 10M36 87Q23 65 15 56M51 58Q72 50 80 33" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><g fill="currentColor" fill-opacity=".22" stroke="currentColor" stroke-width=".8"><path d="M26 101Q5 97 9 81Q25 82 26 101ZM39 82Q61 85 64 67Q45 67 39 82ZM48 63Q28 59 31 42Q48 44 48 63ZM59 39Q78 38 80 22Q62 22 59 39ZM67 16Q53 10 58 2Q71 3 67 16ZM22 67Q8 66 7 52Q21 53 22 67Z"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+          <div class="scrapbook-accordion-item">
+          <button type="button" class="scrapbook-card skills-card" id="skills-card" aria-expanded="false" aria-controls="skills-panel">
+            <span class="scrapbook-card-top"><span>02</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M38 6 18 27l6 6L43 11q3-6-5-5ZM18 27c-12-3-7 11-14 14 10 4 24-1 20-8M30 15l6 5"/></svg></span>
+            <span class="scrapbook-card-title">CREATIVE SKILLS</span><span class="scrapbook-card-subtitle">What I love creating</span><span class="scrapbook-card-action" aria-hidden="true">Open page <span>＋</span></span>
+          </button>
+        <div class="scrapbook-panel" id="skills-panel" role="region" aria-labelledby="skills-card" inert>
+          <div class="scrapbook-panel-clip">
+            <div class="scrapbook-panel-paper creative-skills-paper">
+              <header class="creative-skills-header">
+                <p class="eyebrow">02 / WHAT I LOVE CREATING</p>
+                <h3>Creative Skills</h3>
+                <p class="creative-skills-intro">A few creative areas I've explored along the way.</p>
+                <span class="creative-skills-tape" aria-hidden="true"></span>
+              </header>
+              <ul class="creative-skills-grid" aria-label="Creative areas explored">
+                <li class="creative-skill">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1.4-3.4 1.8 1.8 0 0 1 1.3-3.1H18a3 3 0 0 0 3-3C21 6.8 17 3 12 3Z"/><circle cx="7.5" cy="10" r=".7"/><circle cx="11" cy="7" r=".7"/><circle cx="15.5" cy="8" r=".7"/><circle cx="7.5" cy="14.5" r=".7"/></svg>
+                  <span>Visual Design</span>
+                </li>
+                <li class="creative-skill">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 4 5 5M4 15 16 3a2.1 2.1 0 0 1 3 0l2 2a2.1 2.1 0 0 1 0 3L9 20l-6 1 1-6ZM4 15l5 5M13 21h8"/></svg>
+                  <span>Digital Illustration</span>
+                </li>
+                <li class="creative-skill">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="3.5" width="19" height="14" rx="2"/><path d="M2.5 7.5h19M9 21h6m-3-3.5V21M6 5.5h.1m3 0h.1M6 11h5m-5 3h8"/></svg>
+                  <span>UI/UX &amp; Web Design</span>
+                </li>
+                <li class="creative-skill">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"/></svg>
+                  <span>Interactive Media</span>
+                </li>
+                <li class="creative-skill">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 3v18M17 3v18M3 8h4m-4 8h4M17 8h4m-4 8h4m-10-6 4 2-4 2v-4Z"/></svg>
+                  <span>Animation &amp; VFX</span>
+                </li>
+                <li class="creative-skill">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6" width="13" height="12" rx="2"/><path d="m15.5 10 6-3v10l-6-3M6 10h3"/></svg>
+                  <span>Video Production</span>
+                </li>
+              </ul>
+              <section class="creative-tools" aria-labelledby="creative-tools-heading">
+                <h4 id="creative-tools-heading">Software &amp; Tools <svg class="creative-tools-botanical" viewBox="0 0 32 36" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 33Q18 22 23 4M15 23Q4 22 5 14Q14 13 15 23ZM20 15Q30 15 29 7Q21 7 20 15ZM23 6Q16 5 18 1Q24 1 23 6Z"/></svg></h4>
+                <ul class="creative-tools-grid" aria-label="Software and tools explored">
+                  <li><img src="Icon/PS-transparent.png" alt="Adobe Photoshop logo" decoding="async"><span>Photoshop</span></li>
+                  <li><img src="Icon/AI-transparent.png" alt="Adobe Illustrator logo" decoding="async"><span>Illustrator</span></li>
+                  <li><img src="Icon/ID-transparent.png" alt="Adobe InDesign logo" decoding="async"><span>InDesign</span></li>
+                  <li><img src="Icon/Figma-transparent.png" alt="Figma logo" decoding="async"><span>Figma</span></li>
+                  <li><img src="Icon/AE-transparent.png" alt="Adobe After Effects logo" decoding="async"><span>After Effects</span></li>
+                  <li><img src="Icon/TD-transparent.png" alt="TouchDesigner logo" decoding="async"><span class="creative-tool-label-nowrap">TouchDesigner</span></li>
+                  <li><img src="Icon/VS-alpha.png" alt="Visual Studio Code logo" decoding="async"><span>VS Code</span></li>
+                  <li><img src="Icon/Capcut-alpha.png" alt="CapCut logo" decoding="async"><span>CapCut</span></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+          </div>
+          <div class="scrapbook-accordion-item">
+          <button type="button" class="scrapbook-card experience-card" id="experience-card" aria-expanded="false" aria-controls="experience-panel">
+            <span class="scrapbook-card-top"><span>03</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="7" width="30" height="35" rx="3"/><path d="M17 7v35M6 15h8M6 24h8M6 33h8M23 17h10M23 24h10M23 31h6"/></svg></span>
+            <span class="scrapbook-card-title">RELEVANT EXPERIENCE</span><span class="scrapbook-card-subtitle">What I've explored</span><span class="scrapbook-card-action" aria-hidden="true">Open page <span>＋</span></span>
+          </button>
+        <div class="scrapbook-panel" id="experience-panel" role="region" aria-labelledby="experience-card" inert>
+          <div class="scrapbook-panel-clip">
+            <div class="scrapbook-panel-paper">
+              <header class="experience-heading">
+                <p class="eyebrow">03 / WHAT I'VE EXPLORED</p>
+                <h3>Relevant Experience</h3>
+                <p class="experience-intro">Learning through projects, teamwork, and creative experiences.</p>
+              </header>
+              <div class="experience-entries">
+                <article class="experience-entry is-expanded" aria-labelledby="experience-neofest">
+                  <div class="experience-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M6 13h7l12-6v18l-12-6H6zM13 13v6M9 19l2 8h5l-3-8M28 12l2-2m-2 10 2 2M3 14v4"/></svg></div>
+                  <div class="experience-copy">
+                    <h4 class="experience-chapter-heading">
+                      <button type="button" class="experience-toggle" id="experience-neofest" aria-expanded="true" aria-controls="experience-neofest-description">
+                        <span class="experience-chapter">CHAPTER 01</span>
+                        <span class="experience-title">NEOFEST &mdash; Film Showcase</span>
+                        <span class="experience-role">Publicity Head of Department (HOD)</span>
+                        <svg class="experience-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 7 5 5 5-5"/></svg>
+                      </button>
+                    </h4>
+                    <div class="experience-detail" id="experience-neofest-description" role="region" aria-labelledby="experience-neofest">
+                      <div class="experience-detail-clip"><p class="experience-description">Contributed to publicity planning and visual communication for a student film showcase, supporting promotional design and event awareness.</p></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="experience-entry" aria-labelledby="experience-buddhist">
+                  <div class="experience-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 9C12 6 7 6 3 7v19c5-1 9-1 13 2 4-3 8-3 13-2V7c-4-1-9-1-13 2v19M7 12c2-.3 4 0 6 1m-6 4c2-.3 4 0 6 1m6-5c2-1 4-1.3 6-1m-6 6c2-1 4-1.3 6-1"/></svg></div>
+                  <div class="experience-copy">
+                    <h4 class="experience-chapter-heading">
+                      <button type="button" class="experience-toggle" id="experience-buddhist" aria-expanded="false" aria-controls="experience-buddhist-description">
+                        <span class="experience-chapter">CHAPTER 02</span>
+                        <span class="experience-title">Buddhist Society &mdash; Library Team</span>
+                        <span class="experience-role">Co-Editor &amp; Visual Design Contributor</span>
+                        <svg class="experience-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 7 5 5 5-5"/></svg>
+                      </button>
+                    </h4>
+                    <div class="experience-detail" id="experience-buddhist-description" role="region" aria-labelledby="experience-buddhist" inert>
+                      <div class="experience-detail-clip"><p class="experience-description">Served as one of the co-editors of <i>Dandelion</i> (<span lang="zh">蒲公英</span>), a student publication, contributing to editorial work and publication design. Also created digital event announcements (<i>E-Bodhi Leaf</i> / <span lang="zh">电子菩提叶</span>) and illustrated festival posters to support the society's activities.</p></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="experience-entry" aria-labelledby="experience-academic">
+                  <div class="experience-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="m8 23-2 5 5-2L27 10l-3-3L8 23zm0 0 3 3M20 11l3 3M5 7h8M5 12h5M5 17h2M17 27h10"/></svg></div>
+                  <div class="experience-copy">
+                    <h4 class="experience-chapter-heading">
+                      <button type="button" class="experience-toggle" id="experience-academic" aria-expanded="false" aria-controls="experience-academic-description">
+                        <span class="experience-chapter">CHAPTER 03</span>
+                        <span class="experience-title">Academic Creative Projects</span>
+                        <span class="experience-role">New Media Design and Technology | Universiti Sains Malaysia</span>
+                        <svg class="experience-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 7 5 5 5-5"/></svg>
+                      </button>
+                    </h4>
+                    <div class="experience-detail" id="experience-academic-description" role="region" aria-labelledby="experience-academic" inert>
+                      <div class="experience-detail-clip"><p class="experience-description">Worked on university projects involving UI/UX design, digital illustration, typography, projection mapping, and experimental media. Gained hands-on experience in concept development, visual storytelling, prototyping, and creative collaboration.</p></div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects section-wrap" aria-labelledby="projects-heading">
+      <div class="section-heading projects-heading">
+        <p class="eyebrow">A COLLECTION OF CREATIVE EXPLORATIONS</p>
+        <h2 id="projects-heading">Selected Projects</h2>
+        <p class="projects-subtitle">Every project has a little story behind it.</p>
+        <svg class="projects-botanical" viewBox="0 0 100 150" fill="none" aria-hidden="true" focusable="false"><path d="M20 143Q62 88 62 12" stroke="currentColor" stroke-width="1.5"/><g fill="currentColor"><path opacity=".45" d="M60 38Q31 34 39 15Q64 20 60 38M60 62Q89 54 84 34Q61 40 60 62M51 87Q22 80 27 61Q53 65 51 87M40 113Q72 105 72 83Q45 88 40 113M27 132Q8 125 12 105Q35 110 27 132"/></g><path d="m81 7 2 6 6 2-6 2-2 6-2-6-6-2 6-2zM10 52v10m-5-5h10" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="project-grid">
+        <button type="button" class="project-card" data-project="0" aria-haspopup="dialog" aria-controls="pawfect-dialog" aria-labelledby="project-title-01">
+          <span class="project-card-copy">
+            <span class="project-meta"><span class="project-number">01</span><span>UI/UX Design</span></span>
+            <span class="project-title-row"><svg class="project-doodle" viewBox="0 0 52 52" fill="none" stroke="#715647" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g fill="#9DB6A1"><ellipse cx="12" cy="17" rx="3.5" ry="5" transform="rotate(-25 12 17)"/><ellipse cx="22" cy="11" rx="3.5" ry="5"/><ellipse cx="32" cy="12" rx="3.5" ry="5" transform="rotate(15 32 12)"/><ellipse cx="40" cy="20" rx="3.5" ry="5" transform="rotate(28 40 20)"/><path d="M16 31c4-4 5-10 11-10s8 7 12 12c5 8-2 12-8 9-4-2-6-1-10 0-8 3-12-5-5-11Z"/></g></svg><span class="project-title" id="project-title-01">Pawfect Match</span></span>
+            <span class="project-explore">Explore Project <span aria-hidden="true">&#8599;</span></span>
+          </span>
+        </button>
+        <button type="button" class="project-card" data-project="1" aria-haspopup="dialog" aria-controls="project-dialog" aria-labelledby="project-title-02">
+          <span class="project-card-copy">
+            <span class="project-meta"><span class="project-number">02</span><span>Documentary Film</span></span>
+            <span class="project-title-row"><svg class="project-doodle" viewBox="0 0 52 52" fill="none" stroke="#715647" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 17 32-9 3 9-33 9Z" fill="#9DB6A1"/><path d="m15 15 6 7m5-10 6 7"/><path d="M9 26q15-1 32 0l-1 17H10Z"/><path d="M10 31h30m-25 5h9m-9 4h6"/></svg><span class="project-title" id="project-title-02">My Hero</span></span>
+            <span class="project-explore">Explore Project <span aria-hidden="true">&#8599;</span></span>
+          </span>
+        </button>
+        <button type="button" class="project-card" data-project="2" aria-haspopup="dialog" aria-controls="project-dialog" aria-labelledby="project-title-03">
+          <span class="project-card-copy">
+            <span class="project-meta"><span class="project-number">03</span><span>Projection Mapping</span></span>
+            <span class="project-title-row"><svg class="project-doodle" viewBox="0 0 52 52" fill="none" stroke="#715647" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 21q15-2 29 0l1 17q-15 2-30 0Z" fill="#9DB6A1" fill-opacity=".35"/><circle cx="28" cy="29" r="5"/><path d="m38 25 5-3v14l-5-3M12 26h7m-7 5h5m-5 8-2 5m22-5 2 5M14 20l-2-5h17l2 5"/><path d="m43 17 3-3m-2 25 3 3" stroke="#9DB6A1"/></svg><span class="project-title" id="project-title-03">Core Decay &amp; Regeneration</span></span>
+            <span class="project-explore">Explore Project <span aria-hidden="true">&#8599;</span></span>
+          </span>
+        </button>
+        <button type="button" class="project-card" data-project="3" aria-haspopup="dialog" aria-controls="project-dialog" aria-labelledby="project-title-04">
+          <span class="project-card-copy">
+            <span class="project-meta"><span class="project-number">04</span><span>Digital Illustration</span></span>
+            <span class="project-title-row"><svg class="project-doodle" viewBox="0 0 52 52" fill="none" stroke="#715647" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m11 34 5-12L36 5l7 8-20 18Z" fill="#9DB6A1" fill-opacity=".45"/><path d="m16 22 7 9m-11 2-3 8 8-3m3-11 18-17M8 45q15 2 28-2"/></svg><span class="project-title" id="project-title-04">Character Design</span></span>
+            <span class="project-explore">Explore Project <span aria-hidden="true">&#8599;</span></span>
+          </span>
+        </button>
+        <button type="button" class="project-card" data-project="4" aria-haspopup="dialog" aria-controls="project-dialog" aria-labelledby="project-title-05">
+          <span class="project-card-copy">
+            <span class="project-meta"><span class="project-number">05</span><span>Graphic Design</span></span>
+            <span class="project-title-row"><svg class="project-doodle" viewBox="0 0 52 52" fill="none" stroke="#715647" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 9q15 1 31 0l1 10h-3c-1-6-4-7-10-6l-1 25q0 3 7 3v3H16v-3q6 0 6-3V13c-6-1-9 1-10 6H9Z" fill="#9DB6A1" fill-opacity=".6"/><path d="M8 47q16-2 33 0" stroke="#9DB6A1"/></svg><span class="project-title" id="project-title-05">Typography Design</span></span>
+            <span class="project-explore">Explore Project <span aria-hidden="true">&#8599;</span></span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section id="process" class="process section-wrap" aria-labelledby="process-title">
+      <div class="journey-heading">
+        <header><p class="eyebrow">03 / Creative journey</p><h2 id="process-title">My Creative Process</h2><p class="journey-subtitle">From curiosity to creation, every idea has a story.</p></header>
+        <p class="journey-intro">My creative process begins with curiosity. I enjoy exploring ideas, experimenting with different approaches, and turning small observations into meaningful visual experiences. Every project is an opportunity to learn, create, and improve.</p>
+      </div>
+      <div class="journey-track">
+        <svg class="journey-path" viewBox="0 0 1100 180" preserveAspectRatio="none" fill="none" aria-hidden="true" focusable="false"><path d="M128 97C226 22 305 185 410 139S577 40 690 109S866 200 972 152" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8" vector-effect="non-scaling-stroke"/><path d="m961 145 12 7-10 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <ol class="journey-stages" role="list">
+          <li class="journey-stage"><span class="journey-symbol" aria-hidden="true"><svg viewBox="0 0 52 52" fill="none" focusable="false"><circle cx="22" cy="21" r="12"/><path d="m31 30 10 11M17 20q2-6 8-5M37 8v6m-3-3h6"/><path class="journey-icon-wash" d="M13 13q9-6 17 0l-2 12-12 3Z"/></svg></span><span class="journey-number" aria-hidden="true">01</span><h3>Discover</h3><p class="journey-stage-note">Research &amp; Inspiration</p><p class="journey-stage-copy">I begin by observing, asking questions, and gathering inspiration to understand the purpose behind each idea.</p></li>
+          <li class="journey-stage"><span class="journey-symbol" aria-hidden="true"><svg viewBox="0 0 52 52" fill="none" focusable="false"><path d="M11 10h18l9 9v24H11Z"/><path d="M29 10v10h9M17 33l-2 7 7-2 20-20-5-5Z"/><path d="m32 18 5 5M16 15h6"/><path class="journey-icon-wash" d="m17 33 15-15 5 5-15 15-7 2Z"/></svg></span><span class="journey-number" aria-hidden="true">02</span><h3>Explore</h3><p class="journey-stage-note">Sketch &amp; Experiment</p><p class="journey-stage-copy">I experiment with different concepts, sketches, and visual directions to discover what works best.</p></li>
+          <li class="journey-stage"><span class="journey-symbol" aria-hidden="true"><svg viewBox="0 0 52 52" fill="none" focusable="false"><path d="M10 16h15m12 15v11H10V16M25 13l8-4 9 9-4 8-16 12-6 1 1-6Z"/><path d="m28 12 11 11M17 33l5 5M33 9l4-4 9 9-4 4"/><path class="journey-icon-wash" d="m17 33 11-20 10 13-16 12-6 1Z"/></svg></span><span class="journey-number" aria-hidden="true">03</span><h3>Create</h3><p class="journey-stage-note">Design &amp; Develop</p><p class="journey-stage-copy">I turn selected ideas into visual designs, illustrations, or interactive experiences through hands-on creation.</p></li>
+          <li class="journey-stage"><span class="journey-symbol" aria-hidden="true"><svg viewBox="0 0 52 52" fill="none" focusable="false"><path d="M37 16a16 16 0 1 0 5 18M37 7v10H27"/><path d="m18 27 6 6 11-12M43 18v6m-3-3h6"/><path class="journey-icon-wash" d="M13 24q9-9 19 0l-5 13-11-3Z"/></svg></span><span class="journey-number" aria-hidden="true">04</span><h3>Reflect</h3><p class="journey-stage-note">Review &amp; Refine</p><p class="journey-stage-copy">I review my work, consider feedback, and make improvements to strengthen the final outcome.</p></li>
+        </ol>
+      </div>
+      <blockquote class="journey-quote"><p>A curious mind. A creative eye. Ideas in motion.</p></blockquote>
+    </section>
+
+    <section id="contact" class="contact section-wrap" aria-labelledby="contact-title">
+      <div class="contact-content">
+        <header class="contact-heading"><p class="eyebrow">04 / Get in touch</p><h2 id="contact-title">Let's Keep in Touch!</h2><p class="contact-description">Have an opportunity, a creative idea, or simply want to say hello? I'd love to hear from you!</p></header>
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:tzyyxun0423@gmail.com">
+            <span class="contact-card-icon" aria-hidden="true"><svg viewBox="0 0 52 52" fill="none" focusable="false"><path d="M8 15h36v25H8Z"/><path d="m9 16 17 13 17-13M9 39l12-12m22 12L31 27"/><path d="M34 8v6m-3-3h6" stroke="#9aa986"/></svg></span>
+            <span class="contact-card-copy"><span class="contact-card-label">EMAIL ME</span><span class="contact-card-value">tzyyxun0423@gmail.com</span><span class="contact-card-note">For internship opportunities &amp; inquiries</span></span>
+            <span class="contact-card-arrow" aria-hidden="true">&#8594;</span>
+          </a>
+          <a class="contact-card" href="https://www.instagram.com/tzyyxun_2304/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card-icon" aria-hidden="true"><svg viewBox="0 0 52 52" fill="none" focusable="false"><rect x="9" y="9" width="34" height="34" rx="10"/><circle cx="26" cy="26" r="8"/><circle cx="36" cy="16" r="1.5" fill="currentColor" stroke="none"/><path d="M4 34v6m-3-3h6" stroke="#9aa986"/></svg></span>
+            <span class="contact-card-copy"><span class="contact-card-label">INSTAGRAM</span><span class="contact-card-value">@tzyyxun_2304</span><span class="contact-card-note">Find me on Instagram</span><span class="contact-sr-only"> (opens in a new tab)</span></span>
+            <span class="contact-card-arrow" aria-hidden="true">&#8599;</span>
+          </a>
+        </div>
+        <p class="contact-closing">Thank you for visiting my little creative corner. ♡</p>
+      </div>
+    </section>
+  </main>
+  <footer class="section-wrap"><a class="wordmark" href="#home">TX<span> / Portfolio</span></a><p>© <span id="year">2026</span> TzyyXun. Made with care. ♡</p><a href="#home">Back to top ↑</a></footer>
+
+  <dialog id="pawfect-dialog" aria-labelledby="pawfect-title">
+    <div class="pawfect-toolbar"><span>PROJECT JOURNAL / 01</span><button type="button" class="pawfect-close" aria-label="Close Pawfect Match case study" autofocus>&times;</button></div>
+    <article class="pawfect-content">
+      <header class="pawfect-header"><p class="pawfect-kicker">UI DESIGN</p><h2 id="pawfect-title">Pawfect Match</h2><p class="pawfect-subtitle">Pet Care &amp; Shopping Mobile App Concept</p>
+        <dl class="pawfect-facts"><div><dt>Project Type</dt><dd>Individual Project</dd></div><div><dt>Role</dt><dd>UI Designer</dd></div><div><dt>Design Tool</dt><dd>Figma</dd></div><div><dt>Platform</dt><dd>Mobile App Concept</dd></div></dl>
+      </header>
+      <section aria-labelledby="pawfect-overview"><h3 id="pawfect-overview"><span>01 /</span> PROJECT OVERVIEW</h3><div class="pawfect-editorial-copy"><p>Pawfect Match is a mobile app design concept that combines pet food shopping with accessible pet care information. The app allows users to explore food products for cats and dogs while learning about everyday pet care, nutrition, common health concerns, and essential pet care tips.</p><p>The project aims to create a friendly, organised, and approachable mobile interface that makes pet-related information and shopping easier to navigate.</p></div></section>
+      <section aria-labelledby="pawfect-approach"><h3 id="pawfect-approach"><span>02 /</span> DESIGN APPROACH</h3><div class="pawfect-editorial-copy"><p>My design approach focused on creating a welcoming and easy-to-understand mobile interface. I developed the final screen designs directly in Figma, exploring a warm visual identity through neutral colours, pet photography, rounded interface elements, and consistent navigation.</p><p>I organised the screens around three main areas: browsing pet food products, accessing pet care information, and exploring brand-related content. My focus was on maintaining visual consistency and making the different sections feel connected.</p></div>
+        <ol class="pawfect-highlights"><li><span>01</span><h4>Friendly Visual Identity</h4><p>Warm neutral colours, pet imagery, and rounded interface elements create an approachable atmosphere.</p></li><li><span>02</span><h4>Organised Content</h4><p>Shopping, pet care guidance, and health information are separated into clear sections.</p></li><li><span>03</span><h4>Consistent Interface</h4><p>Repeated navigation patterns, icons, and layout styles help maintain consistency across the app.</p></li></ol>
+      </section>
+      <section aria-labelledby="pawfect-final"><h3 id="pawfect-final"><span>03 /</span> FINAL UI DESIGN</h3><p>The final interface designs showcase the app's main screens, from welcoming users to exploring pet food products and accessing useful pet care information.</p><p class="pawfect-asset-note">Select a design to view it larger. Screens exported together are shown in their original combined image.</p>
+        <div class="pawfect-ui-group"><h4>A. Welcome &amp; Login</h4><div class="pawfect-screen-grid">
+            <figure class="pawfect-screen pawfect-combined"><button type="button" data-pawfect-image="Project%201/2e0b6107-af7c-4989-b9a5-112af92fdc70.png" data-caption="Welcome / Get Started &amp; Login" aria-label="Enlarge Welcome / Get Started &amp; Login" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%201/2e0b6107-af7c-4989-b9a5-112af92fdc70.png" alt="Combined Figma screenshot of the Pawfect Match login and welcome screens" loading="lazy" decoding="async"><span>View design &#8599;</span></button><figcaption>Welcome / Get Started &amp; Login</figcaption></figure>
+            <figure class="pawfect-screen"><button type="button" data-pawfect-image="Project%201/ddaa37b3-fcd8-4fe6-a2d5-f0f31ed6c4dd.png" data-caption="Introduction" aria-label="Enlarge Introduction" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%201/ddaa37b3-fcd8-4fe6-a2d5-f0f31ed6c4dd.png" alt="Introduction screen with pet photography and Feed with Confidence message" loading="lazy" decoding="async"><span>View design &#8599;</span></button><figcaption>Introduction</figcaption></figure></div></div>
+        <div class="pawfect-ui-group"><h4>B. Home &amp; Navigation</h4><div class="pawfect-screen-grid">
+            <figure class="pawfect-screen"><button type="button" data-pawfect-image="Project%201/ad0b0c36-bddd-409e-aab7-6f93689a072e.png" data-caption="Home" aria-label="Enlarge Home" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%201/ad0b0c36-bddd-409e-aab7-6f93689a072e.png" alt="Home screen with cat and dog navigation categories" loading="lazy" decoding="async"><span>View design &#8599;</span></button><figcaption>Home</figcaption></figure>
+            </div></div>
+        <div class="pawfect-ui-group"><h4>C. Pet Food Shopping</h4><div class="pawfect-screen-grid">
+            <figure class="pawfect-screen pawfect-combined"><button type="button" data-pawfect-image="Project%201/58aeed1a-bf8c-44cb-bd41-48a65d336ef1.png" data-caption="Cat Categories &amp; Dog Categories" aria-label="Enlarge Cat Categories &amp; Dog Categories" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%201/58aeed1a-bf8c-44cb-bd41-48a65d336ef1.png" alt="Combined Figma screenshot of cat and dog food shopping categories" loading="lazy" decoding="async"><span>View design &#8599;</span></button><figcaption>Cat Categories &amp; Dog Categories</figcaption></figure></div></div>
+        <div class="pawfect-ui-group"><h4>D. Pet Care &amp; Health</h4><div class="pawfect-screen-grid">
+            <figure class="pawfect-screen pawfect-combined"><button type="button" data-pawfect-image="Project%201/274cc0d1-519f-4f54-87a4-f3418e2f4a0e.png" data-caption="Dog Essentials &amp; Cat Essentials" aria-label="Enlarge Dog Essentials &amp; Cat Essentials" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%201/274cc0d1-519f-4f54-87a4-f3418e2f4a0e.png" alt="Combined Figma screenshot of dog and cat essentials screens" loading="lazy" decoding="async"><span>View design &#8599;</span></button><figcaption>Dog Essentials &amp; Cat Essentials</figcaption></figure>
+            <figure class="pawfect-screen pawfect-combined"><button type="button" data-pawfect-image="Project%201/08e1894d-597c-48de-9d0d-b5620e8da20a.png" data-caption="Cat Common Issues &amp; Dog Common Issues" aria-label="Enlarge Cat Common Issues &amp; Dog Common Issues" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%201/08e1894d-597c-48de-9d0d-b5620e8da20a.png" alt="Combined Figma screenshot of common cat and dog health issues" loading="lazy" decoding="async"><span>View design &#8599;</span></button><figcaption>Cat Common Issues &amp; Dog Common Issues</figcaption></figure>
+            <figure class="pawfect-screen"><button type="button" data-pawfect-image="Project%201/d1d2a577-e721-458a-9652-2387071803e1.png" data-caption="Health Basics" aria-label="Enlarge Health Basics" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%201/d1d2a577-e721-458a-9652-2387071803e1.png" alt="Health Basics screen showing pet care and nutrition information" loading="lazy" decoding="async"><span>View design &#8599;</span></button><figcaption>Health Basics</figcaption></figure></div></div>
+        <div class="pawfect-ui-group"><h4>E. Brand &amp; Information</h4><div class="pawfect-screen-grid">
+            <figure class="pawfect-screen pawfect-combined"><button type="button" data-pawfect-image="Project%201/975f1278-0253-4fb2-ab7b-197675e2263b.png" data-caption="Our Story &amp; About Us" aria-label="Enlarge Our Story &amp; About Us" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%201/975f1278-0253-4fb2-ab7b-197675e2263b.png" alt="Combined Figma screenshot of Our Story and About Us pages" loading="lazy" decoding="async"><span>View design &#8599;</span></button><figcaption>Our Story &amp; About Us</figcaption></figure>
+            <figure class="pawfect-screen"><button type="button" data-pawfect-image="Project%201/68067760-8a4b-43bb-9c9f-4724da369867.png" data-caption="Contact" aria-label="Enlarge Contact" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%201/68067760-8a4b-43bb-9c9f-4724da369867.png" alt="Pawfect Match contact information screen" loading="lazy" decoding="async"><span>View design &#8599;</span></button><figcaption>Contact</figcaption></figure>
+            <figure class="pawfect-screen"><button type="button" data-pawfect-image="Project%201/0b06b9b0-f414-406d-b90c-bef7d1b8848a.png" data-caption="Credits" aria-label="Enlarge Credits" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%201/0b06b9b0-f414-406d-b90c-bef7d1b8848a.png" alt="Pawfect Match credits screen listing image sources, information sources and design resources" loading="lazy" decoding="async"><span>View design &#8599;</span></button><figcaption>Credits</figcaption></figure></div></div>
+      </section>
+      <section class="pawfect-reflection" aria-labelledby="pawfect-reflection"><h3 id="pawfect-reflection"><span>04 /</span> DESIGN REFLECTION</h3><p>Through Pawfect Match, I gained more experience in designing mobile interfaces with Figma, organising different types of content, and maintaining a consistent visual style across multiple screens.</p><p>The project helped me understand the importance of balancing visual appeal with clear navigation and readable information. It also encouraged me to think more carefully about how interface elements work together to create a cohesive mobile app experience.</p></section>
+    </article>
+  </dialog>
+  <dialog id="pawfect-viewer" aria-labelledby="pawfect-viewer-caption">
+    <div class="pawfect-viewer-toolbar"><span>DESIGN DETAIL</span><button type="button" class="pawfect-close" aria-label="Close enlarged image" autofocus>&times;</button></div>
+    <img class="pawfect-viewer-image" alt="">
+    <div class="pawfect-viewer-navigation"><button type="button" data-direction="-1" aria-label="Previous image">&#8592;</button><p id="pawfect-viewer-caption" aria-live="polite"></p><button type="button" data-direction="1" aria-label="Next image">&#8594;</button></div>
+  </dialog>
+  <template id="hero-template">
+    <article class="hero-content">
+      <header><p class="hero-kicker">DOCUMENTARY FILM</p><h2 id="hero-title">My Hero &ndash; Grandpa</h2><p class="hero-subtitle">A Story of Everyday Love &amp; Quiet Dedication</p>
+        <dl class="hero-facts"><div><dt>Project Type</dt><dd>Individual Project</dd></div><div><dt>Role</dt><dd>Director, Storyboard Artist, Cinematographer &amp; Video Editor</dd></div><div><dt>Editing Software</dt><dd>CapCut</dd></div><div><dt>Deliverables</dt><dd>30-Shot Storyboard &amp; Final Documentary</dd></div></dl>
+      </header>
+      <section aria-labelledby="hero-overview"><h3 id="hero-overview">01 / PROJECT OVERVIEW</h3><p>My Hero &ndash; Grandpa is a personal documentary short film that tells the story of my grandfather, an everyday hero whose love and dedication are reflected through his daily routines.</p><p>The film follows his life through gardening, preparing vegetables, selling pineapples at the market, and enjoying quiet moments at home. Through these simple activities, I wanted to highlight his perseverance, patience, and the sacrifices he makes for his family.</p><p>This individual project was independently planned, storyboarded, filmed, and edited by me. It reflects my belief that true heroes are not always extraordinary people, but those who quietly dedicate their lives to the people they love.</p></section>
+      <section aria-labelledby="hero-planning"><h3 id="hero-planning">02 / STORYBOARD &amp; PLANNING</h3><p>Before filming, I created a 30-shot storyboard to plan the visual sequence, camera angles, shot compositions, and movements. The storyboard helped me organise the documentary into meaningful moments, from my grandfather's daily work to his peaceful time at home.</p><div class="hero-storyboards">
+          <figure><button type="button" data-storyboard="Project%202/Storyboard-01.png" data-page="01" aria-label="Enlarge storyboard page 01" aria-haspopup="dialog" aria-controls="hero-viewer"><img src="Project%202/Storyboard-01.png" alt="My Hero storyboard page 01, shots 1 to 6, with original drawings and planning annotations" loading="lazy" decoding="async"><span>View Storyboard &#8599;</span></button><figcaption>Storyboard / Page 01</figcaption></figure>
+          <figure><button type="button" data-storyboard="Project%202/Storyboard-02.png" data-page="02" aria-label="Enlarge storyboard page 02" aria-haspopup="dialog" aria-controls="hero-viewer"><img src="Project%202/Storyboard-02.png" alt="My Hero storyboard page 02, shots 7 to 12, with original drawings and planning annotations" loading="lazy" decoding="async"><span>View Storyboard &#8599;</span></button><figcaption>Storyboard / Page 02</figcaption></figure>
+          <figure><button type="button" data-storyboard="Project%202/Storyboard-03.png" data-page="03" aria-label="Enlarge storyboard page 03" aria-haspopup="dialog" aria-controls="hero-viewer"><img src="Project%202/Storyboard-03.png" alt="My Hero storyboard page 03, shots 13 to 18, with original drawings and planning annotations" loading="lazy" decoding="async"><span>View Storyboard &#8599;</span></button><figcaption>Storyboard / Page 03</figcaption></figure>
+          <figure><button type="button" data-storyboard="Project%202/Storyboard-04.png" data-page="04" aria-label="Enlarge storyboard page 04" aria-haspopup="dialog" aria-controls="hero-viewer"><img src="Project%202/Storyboard-04.png" alt="My Hero storyboard page 04, shots 19 to 24, with original drawings and planning annotations" loading="lazy" decoding="async"><span>View Storyboard &#8599;</span></button><figcaption>Storyboard / Page 04</figcaption></figure>
+          <figure><button type="button" data-storyboard="Project%202/Storyboard-05.png" data-page="05" aria-label="Enlarge storyboard page 05" aria-haspopup="dialog" aria-controls="hero-viewer"><img src="Project%202/Storyboard-05.png" alt="My Hero storyboard page 05, shots 25 to 30, with original drawings and planning annotations" loading="lazy" decoding="async"><span>View Storyboard &#8599;</span></button><figcaption>Storyboard / Page 05</figcaption></figure>
+      </div></section>
+      <section aria-labelledby="hero-visual"><h3 id="hero-visual">03 / VISUAL STORYTELLING</h3><p>I used a combination of wide shots, close-ups, and observational camera movements to capture the details of my grandfather's everyday life. These visual choices helped communicate his hard work, patience, and quiet dedication without relying on dramatic storytelling.</p><ol class="hero-highlights"><li><span>01</span><h4>Everyday Routines</h4><p>Wide and medium shots establish the garden, market, and home environments, showing the rhythm of my grandfather's daily life.</p></li><li><span>02</span><h4>Meaningful Details</h4><p>Close-up shots of his hands, expressions, and everyday actions highlight the physical effort and care behind seemingly ordinary tasks.</p></li><li><span>03</span><h4>Personal Connection</h4><p>Natural moments, gentle camera movements, and simple compositions create an intimate and sincere portrait of my grandfather.</p></li></ol></section>
+      <section aria-labelledby="hero-final"><h3 id="hero-final">04 / FINAL DOCUMENTARY</h3><h4>Final Documentary &mdash; My Hero: Grandpa</h4><p>The completed documentary brings together the planned visual sequences to tell a personal story about family, perseverance, and the meaning of everyday heroism.</p><video class="hero-video" controls preload="metadata" playsinline aria-label="Final Documentary — My Hero: Grandpa"><source src="Project%202/My%20Hero-Grandpa-browser.mp4" type="video/mp4">Your browser does not support embedded video. <a href="Project%202/My%20Hero-Grandpa-browser.mp4">Open the documentary</a>.</video></section>
+      <section aria-labelledby="hero-reflection"><h3 id="hero-reflection">05 / PERSONAL REFLECTION</h3><p>Creating My Hero &ndash; Grandpa allowed me to explore documentary storytelling through a subject who is personally meaningful to me.</p><p>Planning the storyboard, filming everyday moments, and editing the final video helped me understand how camera composition, pacing, and small visual details can communicate emotion.</p><p>Most importantly, this project reminded me to appreciate the people whose everyday efforts often go unnoticed. Through this film, I wanted to express my gratitude to my grandfather and show that love and dedication can be found in the simplest moments.</p></section>
+    </article>
+  </template>
+  <dialog id="hero-viewer" aria-labelledby="hero-viewer-caption">
+    <div class="hero-viewer-toolbar"><span id="hero-viewer-caption" aria-live="polite">Storyboard</span><div><button type="button" class="hero-zoom" aria-pressed="false">Zoom in</button><button type="button" class="hero-viewer-close" aria-label="Close storyboard viewer" autofocus>&times;</button></div></div>
+    <div class="hero-viewer-stage" tabindex="0" aria-label="Storyboard page; scroll to read when zoomed"><img alt=""></div>
+    <div class="hero-viewer-navigation"><button type="button" data-hero-direction="-1" aria-label="Previous storyboard page">&#8592;</button><span>Use arrow keys to browse pages</span><button type="button" data-hero-direction="1" aria-label="Next storyboard page">&#8594;</button></div>
+  </dialog>
+
+
+  <template id="typography-template">
+    <article class="typography-content">
+      <header><p class="typography-kicker">GRAPHIC DESIGN / TYPOGRAPHY</p><h2 id="typography-title">Typography Design</h2><p class="typography-subtitle">Bodoni &mdash; Typeface Study</p><dl class="typography-facts"><div><dt>Typeface</dt><dd>Bodoni</dd></div><div><dt>Classification</dt><dd>Modern / Didone Serif</dd></div><div><dt>Software</dt><dd>Adobe InDesign</dd></div><div><dt>Format</dt><dd>A2 Typography Poster</dd></div></dl></header>
+      <section aria-labelledby="typography-overview"><h3 id="typography-overview">01 / PROJECT OVERVIEW</h3><h4>Bodoni &mdash; Typeface Study</h4><div class="typography-intro"><div><p>This project explores the visual characteristics of Bodoni through an experimental typographic poster. I focused on its dramatic stroke contrast, refined serif details, and elegant letterforms while experimenting with scale, fragmentation, and composition.</p><p class="typography-note">Giambattista Bodoni &middot; Late 18th Century</p></div><figure class="typography-hero"><a class="typography-image-link" href="Project%205/c1e81e89-1f90-400f-8fc5-c2b716d20e76.png" aria-label="Enlarge Final Bodoni poster" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%205/c1e81e89-1f90-400f-8fc5-c2b716d20e76.png" alt="Complete red, black and white Bodoni poster with a fragmented letter B, diagonal slices, red circular accents and specimen text." loading="eager" decoding="async"><span>View full size &#8599;</span></a><figcaption>Final Bodoni poster</figcaption></figure></div></section>
+      <section aria-labelledby="typography-exploration"><h3 id="typography-exploration">02 / TYPEFACE EXPLORATION</h3><h4>Understanding Bodoni</h4><p>Bodoni is a Modern / Didone serif typeface recognised for its high stroke contrast, vertical stress, and fine, unbracketed serifs. These characteristics inspired me to create a composition that balances elegance with a bold experimental visual approach.</p><figure class="typography-research"><a class="typography-image-link" href="Project%205/bodoni-anatomy.png" aria-label="Enlarge Bodoni letterform anatomy" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%205/bodoni-anatomy.png" alt="Original Bodoni research sheet identifying vertical stress, counters, ascenders, descenders, ligatures and thin unbracketed serifs." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Bodoni letterform anatomy</figcaption></figure></section>
+      <section aria-labelledby="typography-composition"><h3 id="typography-composition">03 / DESIGN EXPLORATION</h3><h4>Exploring Composition</h4><p>I explored different poster arrangements before developing the final composition. I experimented with scale, asymmetry, letterform placement, and the relationship between typography and negative space.</p><div class="typography-studies"><figure><a class="typography-image-link" href="Project%205/bodoni-composition-01.png" aria-label="Enlarge Fragmented &amp; experimental" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%205/bodoni-composition-01.png" alt="Original composition study with a large sliced letter B, asymmetric information and red circular accents." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Fragmented &amp; experimental</figcaption></figure><figure><a class="typography-image-link" href="Project%205/bodoni-composition-02.png" aria-label="Enlarge Minimalist &amp; editorial" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%205/bodoni-composition-02.png" alt="Original composition study with a centred Bodoni wordmark, offset grey lettering and generous negative space." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Minimalist &amp; editorial</figcaption></figure><figure><a class="typography-image-link" href="Project%205/bodoni-composition-03.png" aria-label="Enlarge Layered &amp; dimensional" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%205/bodoni-composition-03.png" alt="Original composition study with overlapping red and black B and D letterforms." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Layered &amp; dimensional</figcaption></figure></div></section>
+      <section aria-labelledby="typography-grid"><h3 id="typography-grid">04 / GRID &amp; LAYOUT</h3><h4>Structure Behind the Design</h4><div class="typography-intro"><p>Although the poster uses an experimental composition, its layout is supported by a structured grid. I used alignment guides to organise the information, maintain consistent spacing, and create a clear visual hierarchy between the oversized letterform and supporting text.</p><figure class="typography-grid-art"><a class="typography-image-link" href="Project%205/8f4cd925-d787-418f-9a9e-cfc8efd9c5a0.png" aria-label="Enlarge Grid and alignment structure developed in Adobe InDesign." aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%205/8f4cd925-d787-418f-9a9e-cfc8efd9c5a0.png" alt="The Bodoni poster with cyan and magenta InDesign alignment guides visible across the composition." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Grid and alignment structure developed in Adobe InDesign.</figcaption></figure></div></section>
+      <section aria-labelledby="typography-outcome"><h3 id="typography-outcome">05 / FINAL POSTER</h3><h4>Final Outcome</h4><p>The final poster combines Bodoni's classical elegance with a contemporary experimental composition. The fragmented letterform creates a strong focal point, while the supporting information and specimen text maintain the poster's typographic purpose.</p></section>
+      <section aria-labelledby="typography-reflection"><h3 id="typography-reflection">06 / REFLECTION</h3><h4>What I Learned</h4><p>This project helped me understand how typography can function as both information and visual expression. I learned to balance experimental composition with readability, using grid systems, spacing, contrast, and hierarchy to organise the poster. Working with Bodoni also strengthened my attention to letterform details and typographic consistency.</p></section>
+    </article>
+  </template>
+
+  <template id="character-template">
+    <article class="character-content">
+      <header><p class="character-kicker">DIGITAL ILLUSTRATION / CHARACTER DESIGN</p><h2 id="character-title">Character Design</h2><p class="character-subtitle">An original character, from silhouette to expression.</p><p class="character-meta">Original Character Design</p></header>
+      <section aria-labelledby="character-overview"><h3 id="character-overview">01 / PROJECT OVERVIEW</h3><div class="character-intro"><div><p>This project explores the creation of an original anime-inspired character, from early silhouette and anatomy studies to a fully developed design. I focused on creating a recognisable visual identity through her hairstyle, clothing, accessories, poses, and expressions.</p><p class="character-note">A relaxed student aesthetic, with playful details and a love for music.</p></div><figure class="character-hero"><a class="character-image-link" href="Project%204/d30d1762-aabc-4875-8bce-80fd3187898a.jpg" aria-label="Enlarge Final Character Illustration" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%204/d30d1762-aabc-4875-8bce-80fd3187898a.jpg" alt="Full-length character with long dark-blue hair, pink cat-ear headphones, a pink-and-green hoodie, denim shorts and orange ankle boots." loading="eager" decoding="async"><span>View full size &#8599;</span></a><figcaption>Final Character Illustration</figcaption></figure></div></section>
+      <section aria-labelledby="character-exploration"><h3 id="character-exploration">02 / DESIGN EXPLORATION</h3><h4>Silhouette &amp; Anatomy</h4><p>I began by exploring different silhouettes and studying body structure to develop a balanced character design. These studies helped me understand how proportion, shape, and anatomy influence the overall appearance of a character.</p><div class="character-gallery"><figure><a class="character-image-link" href="Project%204/d16d2f02-7727-4028-b562-dedac2f11e1c.jpg" aria-label="Enlarge Silhouette Exploration" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%204/d16d2f02-7727-4028-b562-dedac2f11e1c.jpg" alt="Six black character silhouettes exploring different hairstyles, clothing shapes and proportions." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Silhouette Exploration</figcaption></figure><figure><a class="character-image-link" href="Project%204/33a3d084-c850-48a3-b4aa-bcebb743029d.jpg" aria-label="Enlarge Anatomy-Based Construction" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%204/33a3d084-c850-48a3-b4aa-bcebb743029d.jpg" alt="The chosen character silhouette alongside a grayscale full-body construction of the dressed character." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Anatomy-Based Construction</figcaption></figure></div></section>
+      <section aria-labelledby="character-development"><h3 id="character-development">03 / CHARACTER DEVELOPMENT</h3><h4>Visual Identity &amp; Turnaround</h4><p>Pink cat-ear headphones express her interest in music. An oversized pink-and-green gradient hoodie keeps the design comfortable and casual, while long dark-blue hair adds movement. Denim shorts and orange ankle boots complete her everyday style.</p><div class="character-gallery"><figure><a class="character-image-link" href="Project%204/aabe432a-1105-44d1-8181-3446f262ac15.jpg" aria-label="Enlarge Character Design Breakdown" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%204/aabe432a-1105-44d1-8181-3446f262ac15.jpg" alt="Annotated character sheet with close-ups of the cat-ear headphones, gradient hoodie, hair and ankle boots." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Character Design Breakdown</figcaption></figure><figure><a class="character-image-link" href="Project%204/123c9dc4-1725-4eec-b8f8-9727eb3bc8ad.jpg" aria-label="Enlarge Turnaround Sheet" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%204/123c9dc4-1725-4eec-b8f8-9727eb3bc8ad.jpg" alt="Front, side and back views showing the character's consistent clothing, hairstyle and proportions." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Turnaround Sheet</figcaption></figure></div></section>
+      <section aria-labelledby="character-expression"><h3 id="character-expression">04 / EXPRESSIONS &amp; POSES</h3><p>After establishing the character's appearance, I explored different poses and facial expressions to communicate her personality. These variations helped me practise consistency while making the character feel more expressive and lively.</p><div class="character-gallery"><figure><a class="character-image-link" href="Project%204/d60e259e-c922-4923-98dd-12ce48887304.jpg" aria-label="Enlarge Dynamic Poses" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%204/d60e259e-c922-4923-98dd-12ce48887304.jpg" alt="Three full-body poses showing the character drawing, listening to music and sitting with her head resting on one hand." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Dynamic Poses</figcaption></figure><figure><a class="character-image-link" href="Project%204/2eca2e56-8579-41dc-b197-f948129e3f32.jpg" aria-label="Enlarge Facial Expressions" aria-haspopup="dialog" aria-controls="pawfect-viewer"><img src="Project%204/2eca2e56-8579-41dc-b197-f948129e3f32.jpg" alt="Four character portraits showing cheerful, angry, crying and bashful expressions." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Facial Expressions</figcaption></figure></div></section>
+      <section aria-labelledby="character-final"><h3 id="character-final">05 / FINAL CHARACTER DESIGN</h3><p>The completed design brings together a recognisable silhouette, playful accessories and a relaxed everyday outfit, with consistent details across the turnaround, poses and expressions.</p></section>
+      <section aria-labelledby="character-reflection"><h3 id="character-reflection">06 / REFLECTION</h3><p>This project helped me improve my understanding of character proportions, visual consistency, and expressive design. I learned how small details, such as accessories, clothing, and facial expressions, can communicate a character's personality. Developing the character from early studies to a final illustration also strengthened my confidence in digital character design.</p></section>
+    </article>
+  </template>
+
+  <template id="mapping-template">
+    <article class="mapping-content">
+      <header>
+        <p class="mapping-kicker">PROJECTION MAPPING / INTERACTIVE MEDIA</p>
+        <h2 id="mapping-title">Core Decay &amp; Regeneration</h2>
+        <p class="mapping-subtitle">A visual story of food waste, renewal &amp; the cycle of life.</p>
+        <dl class="mapping-facts"><div><dt>Project Type</dt><dd>Individual University Project</dd></div><div><dt>Tools</dt><dd>Adobe After Effects, TouchDesigner</dd></div><div><dt>Duration</dt><dd>Approximately 20 seconds</dd></div><div><dt>Format</dt><dd>3D box projection</dd></div></dl>
+        <p class="mapping-materials"><span>Materials /</span> Projector, laptop and a white box structure.</p>
+      </header>
+      <section aria-labelledby="mapping-overview"><h3 id="mapping-overview">01 / PROJECT OVERVIEW</h3><p>Core Decay &amp; Regeneration is a projection mapping project that explores food waste and the possibility of renewal. Through a short visual narrative, a fresh apple gradually decays before transforming into a growing tree, representing sustainability, regeneration, and the cycle of life.</p></section>
+      <section aria-labelledby="mapping-concept"><h3 id="mapping-concept">02 / CONCEPT &amp; VISUAL NARRATIVE</h3>
+        <ol class="mapping-narrative"><li><span>01 / 0&ndash;6s</span><h4>Freshness</h4><p>A fresh apple represents food in its original, healthy condition.</p></li><li><span>02 / 6&ndash;14s</span><h4>Decay</h4><p>The apple gradually deteriorates, symbolising food waste and loss.</p></li><li><span>03 / 14&ndash;20s</span><h4>Regeneration</h4><p>The decayed apple transforms into a growing tree, representing renewal and the cycle of life.</p></li></ol>
+      </section>
+      <section aria-labelledby="mapping-process"><h3 id="mapping-process">03 / CREATIVE PROCESS</h3><p class="mapping-gallery-note">Original sketches, screenshots and setup photographs from my project documentation. Select an image to view it at full size.</p>
+        <div class="mapping-process-step"><h4>A. Initial Sketch &amp; Perspective Study</h4><p>I explored how two-dimensional visuals could be translated onto the surfaces of a three-dimensional box. The sketches helped me plan the perspective and layout before starting the digital production.</p><div class="mapping-gallery"><figure><a class="mapping-image-link" href="Project%203/Process%20Images/perspective-sketch-front.png" aria-haspopup="dialog" aria-controls="pawfect-viewer" aria-label="View original image: Original perspective sketch for the two visible faces."><img src="Project%203/Process%20Images/perspective-sketch-front.png" alt="Hand-drawn box study showing an apple across two surfaces and notes about the different viewing angles." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Original perspective sketch for the two visible faces.</figcaption></figure>
+<figure><a class="mapping-image-link" href="Project%203/Process%20Images/perspective-sketch-side.png" aria-haspopup="dialog" aria-controls="pawfect-viewer" aria-label="View original image: Apple-to-tree narrative and surface layout study."><img src="Project%203/Process%20Images/perspective-sketch-side.png" alt="Original sketches showing the apple-to-tree idea, perspective, and separate box surfaces." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Apple-to-tree narrative and surface layout study.</figcaption></figure></div></div>
+        <div class="mapping-process-step"><h4>B. Animation Development &mdash; Adobe After Effects</h4><p>I created the apple-to-tree animation in Adobe After Effects using separate layers and compositions. Rotation, scaling and positioning helped match the visual elements to the perspective of each box surface, while the timeline controlled the transitions between stages.</p><div class="mapping-gallery"><figure><a class="mapping-image-link" href="Project%203/Process%20Images/after-effects-animation-layers.png" aria-haspopup="dialog" aria-controls="pawfect-viewer" aria-label="View original image: Animation layers and keyframes in After Effects."><img src="Project%203/Process%20Images/after-effects-animation-layers.png" alt="After Effects workspace showing the apple decay animation, layered elements, and timeline keyframes." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Animation layers and keyframes in After Effects.</figcaption></figure>
+<figure><a class="mapping-image-link" href="Project%203/Process%20Images/after-effects-apple-composition.png" aria-haspopup="dialog" aria-controls="pawfect-viewer" aria-label="View original image: Tree transformation within the animation timeline."><img src="Project%203/Process%20Images/after-effects-apple-composition.png" alt="After Effects composition showing the tree transformation and its animation layers." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Tree transformation within the animation timeline.</figcaption></figure>
+<figure><a class="mapping-image-link" href="Project%203/Process%20Images/after-effects-perspective-adjustment.png" aria-haspopup="dialog" aria-controls="pawfect-viewer" aria-label="View original image: Rotation and positioning for the box perspective."><img src="Project%203/Process%20Images/after-effects-perspective-adjustment.png" alt="After Effects perspective adjustment showing a rotated visual surface with transform controls." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Rotation and positioning for the box perspective.</figcaption></figure>
+<figure><a class="mapping-image-link" href="Project%203/Process%20Images/after-effects-composition-structure.png" aria-haspopup="dialog" aria-controls="pawfect-viewer" aria-label="View original image: Composition structure and layered visual elements."><img src="Project%203/Process%20Images/after-effects-composition-structure.png" alt="After Effects project panel showing multiple compositions and the visual elements used in the animation." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Composition structure and layered visual elements.</figcaption></figure></div></div>
+        <div class="mapping-process-step"><h4>C. Projection Setup</h4><p>I prepared a white box as a clean, neutral projection surface and positioned the projector in front of it. Adjusting the distance and angle helped the visuals cover the visible surfaces while minimising distortion.</p><div class="mapping-gallery"><figure><a class="mapping-image-link" href="Project%203/Process%20Images/box-structure.jpeg" aria-haspopup="dialog" aria-controls="pawfect-viewer" aria-label="View original image: White box prepared as the projection surface."><img src="Project%203/Process%20Images/box-structure.jpeg" alt="The original white box structure before projection." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>White box prepared as the projection surface.</figcaption></figure>
+<figure><a class="mapping-image-link" href="Project%203/Process%20Images/installation-setup.jpeg" aria-haspopup="dialog" aria-controls="pawfect-viewer" aria-label="View original image: Projector and laptop in the physical setup."><img src="Project%203/Process%20Images/installation-setup.jpeg" alt="Photograph of the projector on a chair and the laptop used for the projection setup." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Projector and laptop in the physical setup.</figcaption></figure></div></div>
+        <div class="mapping-process-step"><h4>D. Projection Mapping &mdash; TouchDesigner</h4><p>I imported the final animation into TouchDesigner and aligned the four corners of the visual with the edges of the box. I adjusted the mapping so the projected imagery appeared connected across the different surfaces.</p><div class="mapping-gallery"><figure><a class="mapping-image-link" href="Project%203/Process%20Images/touchdesigner-mapping.png" aria-haspopup="dialog" aria-controls="pawfect-viewer" aria-label="View original image: TouchDesigner mapping preview and alignment check."><img src="Project%203/Process%20Images/touchdesigner-mapping.png" alt="Laptop displaying the mapping preview while coloured test surfaces are projected onto the box." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>TouchDesigner mapping preview and alignment check.</figcaption></figure>
+<figure><a class="mapping-image-link" href="Project%203/Process%20Images/aligned-projection.jpeg" aria-haspopup="dialog" aria-controls="pawfect-viewer" aria-label="View original image: Animation aligned with the physical box surfaces."><img src="Project%203/Process%20Images/aligned-projection.jpeg" alt="The completed animation projected onto the box with the TouchDesigner workspace visible on the laptop." loading="lazy" decoding="async"><span>View full size &#8599;</span></a><figcaption>Animation aligned with the physical box surfaces.</figcaption></figure></div></div>
+      </section>
+      <section aria-labelledby="mapping-showcase"><h3 id="mapping-showcase">04 / FINAL SHOWCASE</h3>
+        <figure class="mapping-showcase"><div class="mapping-video-paper"><video class="mapping-video" controls playsinline preload="metadata" aria-label="Final showcase of Core Decay and Regeneration projection mapping"><source src="Project%203/Mapping%20final%20showcase.mp4" type="video/mp4">Your browser does not support embedded video. <a href="Project%203/Mapping%20final%20showcase.mp4">Open the original projection mapping showcase</a>.</video></div><figcaption>Final projection mapping installation &mdash; the apple's transformation from decay to regeneration is projected across the surfaces of a three-dimensional box.</figcaption></figure>
+      </section>
+      <section aria-labelledby="mapping-reflection"><h3 id="mapping-reflection">05 / REFLECTION</h3><p>This project helped me understand how animation can extend beyond a flat screen and interact with physical space. One of the main challenges was aligning the visuals across the different surfaces of the box while maintaining a convincing three-dimensional effect. Through experimenting with perspective, layering, and projection alignment, I gained practical experience in combining digital animation with physical installation.</p></section>
+    </article>
+  </template>
+  <dialog id="project-dialog" aria-labelledby="dialog-title">
+    <div class="project-dialog-toolbar"><span class="project-dialog-label">PROJECT JOURNAL</span><button type="button" class="dialog-close" aria-label="Close project details" autofocus>&times;</button></div>
+    <div class="project-dialog-content">
+      <p class="project-dialog-meta"><span id="dialog-number"></span><span aria-hidden="true"> / </span><span id="dialog-category"></span></p>
+      <h2 id="dialog-title"></h2>
+      <img id="dialog-cover" alt="" decoding="async">
+      <p class="dialog-note">Case study in progress. The descriptions below are placeholders.</p>
+      <div class="case-study">
+        <section aria-labelledby="project-overview-heading"><h3 id="project-overview-heading"><span>01 /</span> Project Overview</h3><p>Placeholder: Project brief, context, and goals to be added.</p></section>
+        <section aria-labelledby="project-process-heading"><h3 id="project-process-heading"><span>02 /</span> Creative Process</h3><p>Placeholder: Creative approach, tools, and process notes to be added.</p></section>
+        <section aria-labelledby="project-outcome-heading"><h3 id="project-outcome-heading"><span>03 /</span> Final Outcome</h3><p>Placeholder: Final work, outcomes, and reflections to be added.</p></section>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="artwork-gallery" aria-labelledby="artwork-gallery-heading">
+    <div class="artwork-gallery-paper">
+      <button type="button" class="artwork-gallery-close" aria-label="Close artwork gallery" autofocus>&times;</button>
+      <h2 id="artwork-gallery-heading">My Artwork <span aria-hidden="true">&#10022;</span></h2>
+      <div class="artwork-gallery-mount">
+        <span class="artwork-gallery-notebook" aria-hidden="true"></span>
+        <span class="artwork-gallery-perforation" aria-hidden="true"></span>
+        <span class="artwork-gallery-tape" aria-hidden="true"></span>
+        <div class="artwork-gallery-stage" role="group" aria-roledescription="carousel" aria-label="Artwork collection">
+          <div class="artwork-gallery-track"></div>
+        </div>
+        <span class="artwork-gallery-paperclip" aria-hidden="true"></span>
+      </div>
+      <div class="artwork-gallery-navigation">
+        <button type="button" id="artwork-gallery-prev" aria-label="Previous artwork">&#8592;</button>
+        <div class="artwork-gallery-caption" aria-live="polite" aria-atomic="true">
+          <h3 id="artwork-gallery-title">My Hero</h3>
+          <p id="artwork-gallery-category">Short Film · Visual Storytelling</p>
+          <span id="artwork-gallery-counter">01 / 05</span>
+          <p id="artwork-gallery-year" hidden></p>
+          <p id="artwork-gallery-description" hidden></p>
+          <svg class="artwork-gallery-botanical" viewBox="0 0 100 140" fill="none" aria-hidden="true"><path d="M18 134Q60 88 65 10" stroke="currentColor" stroke-width="1.4"/><g fill="currentColor" opacity=".65"><path d="M62 36Q35 32 42 15Q64 17 62 36M61 56Q87 49 85 30Q65 34 61 56M53 79Q27 74 30 56Q50 58 53 79M43 101Q72 96 74 75Q50 80 43 101M30 119Q10 115 13 96Q33 98 30 119"/></g></svg>
+        </div>
+        <button type="button" id="artwork-gallery-next" aria-label="Next artwork">&#8594;</button>
+      </div>
+      <div class="artwork-gallery-dots" role="group" aria-label="Choose artwork"></div>
+    </div>
+  </dialog>
+</body>
+</html>
