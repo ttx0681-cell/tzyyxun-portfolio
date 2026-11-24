@@ -1673,3 +1673,119 @@ footer p, footer > a:last-child { font-size:12.5px; }
   margin:0 0 18px;
   padding-inline:0;
 }
+
+
+/* Chapter 02 publication and poster collage */
+#experience-buddhist-description {
+  container: buddhist-detail / inline-size;
+}
+#experience-buddhist-description .buddhist-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) min(68%, 570px);
+  column-gap: 28px;
+  align-items: center;
+}
+#experience-buddhist-description .buddhist-collage {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 1.2vw, 14px);
+  width: 100%;
+  max-width: 570px;
+  padding: 14px 32px 28px 0;
+  box-sizing: border-box;
+}
+#experience-buddhist-description[inert] .buddhist-collage { visibility: hidden; }
+#experience-buddhist-description .buddhist-photo {
+  position: relative;
+  display: block;
+  flex: 1 1 0;
+  min-width: 0;
+  border: 4px solid #fff6e7;
+  background: #fff6e7;
+  box-shadow: 0 3px 8px #4a382e33;
+  transform: rotate(var(--photo-angle));
+  cursor: zoom-in;
+}
+#experience-buddhist-description .buddhist-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#experience-buddhist-description .buddhist-photo::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 33%;
+  width: 36%;
+  height: 12px;
+  background: repeating-linear-gradient(45deg, #e7cca1dd 0 4px, #f1dbb6dd 4px 8px);
+  transform: rotate(7deg);
+  pointer-events: none;
+}
+#experience-buddhist-description .buddhist-photo:focus-visible {
+  outline: 2px solid #536d55;
+  outline-offset: 4px;
+}
+#experience-buddhist-description .buddhist-photo-poster {
+  flex-grow: 1.16;
+  --photo-angle: -4deg;
+}
+#experience-buddhist-description .buddhist-photo-bodhi { margin-bottom: 12px; --photo-angle: 5deg; }
+#experience-buddhist-description .buddhist-photo-dandelion {
+  flex-grow: .95;
+  margin-top: 15px;
+  --photo-angle: -3deg;
+}
+@container buddhist-detail (max-width: 920px) {
+  #experience-buddhist-description .buddhist-detail {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px 0;
+  }
+  #about #experience-buddhist-description .experience-description {
+    max-width: none;
+    padding-bottom: 0;
+  }
+  #experience-buddhist-description .buddhist-collage {
+    justify-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+    padding: 8px 16px 24px;
+  }
+  #experience-buddhist-description .buddhist-photo {
+    flex-basis: min(88px, 100%);
+    max-width: 168px;
+  }
+}
+
+#buddhist-preview {
+  inset: 0;
+  width: fit-content;
+  max-width: calc(100% - 24px);
+  max-height: calc(100dvh - 24px);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  overflow: visible;
+  background: transparent;
+}
+#buddhist-preview .buddhist-preview-frame {
+  position: relative;
+  padding: 54px 10px 10px;
+  border-radius: 12px;
+  background: var(--cream);
+  box-shadow: 0 8px 30px #30292050;
+}
+#buddhist-preview .artwork-gallery-close {
+  top: 4px;
+  right: 6px;
+  line-height: 1;
+}
+#buddhist-preview img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(85vw, 1100px);
+  max-height: calc(100dvh - 88px);
+  object-fit: contain;
+}
