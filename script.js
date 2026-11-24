@@ -467,6 +467,32 @@ experienceToggles.forEach(toggle => {
   });
 });
 
+
+// Chapter 02 image preview.
+const buddhistCollage = document.querySelector('.buddhist-collage');
+const buddhistPreview = document.querySelector('#buddhist-preview');
+const buddhistPreviewImage = buddhistPreview.querySelector('img');
+let buddhistPreviewTrigger;
+
+buddhistCollage.addEventListener('click', event => {
+  const link = event.target.closest('.buddhist-photo');
+  if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+
+  event.preventDefault();
+  buddhistPreviewTrigger = link;
+  buddhistPreviewImage.alt = link.querySelector('img').alt;
+  buddhistPreviewImage.src = link.href;
+  buddhistPreview.showModal();
+});
+
+buddhistPreview.querySelector('button').addEventListener('click', () => buddhistPreview.close());
+buddhistPreview.addEventListener('click', event => {
+  if (event.target !== buddhistPreviewImage) buddhistPreview.close();
+});
+buddhistPreview.addEventListener('close', () => {
+  buddhistPreviewTrigger?.focus({preventScroll: true});
+});
+
 // Isolated Pawfect Match journal and nested image viewer.
 const pawfectDialog = document.querySelector('#pawfect-dialog');
 const pawfectViewer = document.querySelector('#pawfect-viewer');
