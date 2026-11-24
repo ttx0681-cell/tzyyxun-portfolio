@@ -1,3 +1,39 @@
+// Chapter 02 image preview.
+{
+  const preview = document.querySelector('#buddhist-preview');
+  const previewImage = preview.querySelector('img');
+  const previews = document.querySelectorAll('#experience-buddhist-description .buddhist-photo');
+  let trigger;
+  let pressedOutside = false;
+
+  previews.forEach(button => {
+    button.addEventListener('click', () => {
+      const thumbnail = button.querySelector('img');
+      trigger = button;
+      previewImage.alt = thumbnail.alt;
+      previewImage.src = thumbnail.src;
+      preview.showModal();
+    });
+  });
+
+  preview.querySelector('.artwork-gallery-close').addEventListener('click', () => preview.close());
+  preview.addEventListener('pointerdown', event => {
+    pressedOutside = event.target !== previewImage;
+  });
+  preview.addEventListener('pointercancel', () => {
+    pressedOutside = false;
+  });
+  preview.addEventListener('click', event => {
+    if (pressedOutside && event.target !== previewImage && !event.target.closest('button')) {
+      preview.close();
+    }
+    pressedOutside = false;
+  });
+  preview.addEventListener('close', () => {
+    if (!preview.open) trigger?.focus({preventScroll: true});
+  });
+}
+
 // Mobile navigation: keep the button's accessible state in sync with the menu.
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
@@ -467,31 +503,6 @@ experienceToggles.forEach(toggle => {
   });
 });
 
-
-// Chapter 02 image preview.
-const buddhistCollage = document.querySelector('.buddhist-collage');
-const buddhistPreview = document.querySelector('#buddhist-preview');
-const buddhistPreviewImage = buddhistPreview.querySelector('img');
-let buddhistPreviewTrigger;
-
-buddhistCollage.addEventListener('click', event => {
-  const link = event.target.closest('.buddhist-photo');
-  if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-
-  event.preventDefault();
-  buddhistPreviewTrigger = link;
-  buddhistPreviewImage.alt = link.querySelector('img').alt;
-  buddhistPreviewImage.src = link.href;
-  buddhistPreview.showModal();
-});
-
-buddhistPreview.querySelector('button').addEventListener('click', () => buddhistPreview.close());
-buddhistPreview.addEventListener('click', event => {
-  if (event.target !== buddhistPreviewImage) buddhistPreview.close();
-});
-buddhistPreview.addEventListener('close', () => {
-  buddhistPreviewTrigger?.focus({preventScroll: true});
-});
 
 // Isolated Pawfect Match journal and nested image viewer.
 const pawfectDialog = document.querySelector('#pawfect-dialog');
