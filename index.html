@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A New Media & Technology student portfolio. Explore selected projects, creative process, and contact information.">
   <title>TzyyXun — Creative Portfolio</title>
-  <link rel="stylesheet" href="./style.css?v=chapter02-preview">
-  <script src="./script.js?v=chapter02-preview" defer></script>
+  <link rel="stylesheet" href="./style.css?v=journal-preview-continuous-zoom">
+  <script src="./script.js?v=journal-preview-continuous-zoom" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -354,8 +354,8 @@
     </article>
   </dialog>
   <dialog id="pawfect-viewer" aria-labelledby="pawfect-viewer-caption">
-    <div class="pawfect-viewer-toolbar"><span>DESIGN DETAIL</span><button type="button" class="pawfect-close" aria-label="Close enlarged image" autofocus>&times;</button></div>
-    <img class="pawfect-viewer-image" alt="">
+    <div class="pawfect-viewer-toolbar"><span>DESIGN DETAIL</span><div class="journal-viewer-controls"><div class="journal-viewer-steps" role="group" aria-label="Image magnification"><button type="button" class="journal-viewer-minus" aria-label="Zoom out" aria-disabled="true">&minus;</button><output aria-label="Zoom percentage" aria-live="off">100%</output><button type="button" class="journal-viewer-plus" aria-label="Increase zoom">+</button></div><button type="button" class="journal-viewer-zoom" aria-pressed="false">Zoom in</button><button type="button" class="journal-viewer-close" aria-label="Close enlarged image" autofocus>&times;</button></div></div>
+    <div class="journal-viewer-stage" tabindex="0" aria-label="Image preview; use the wheel or pinch to zoom, and drag to pan"><div class="journal-viewer-canvas"><img alt="" draggable="false"></div></div>
     <div class="pawfect-viewer-navigation"><button type="button" data-direction="-1" aria-label="Previous image">&#8592;</button><p id="pawfect-viewer-caption" aria-live="polite"></p><button type="button" data-direction="1" aria-label="Next image">&#8594;</button></div>
   </dialog>
   <template id="hero-template">
@@ -377,8 +377,8 @@
     </article>
   </template>
   <dialog id="hero-viewer" aria-labelledby="hero-viewer-caption">
-    <div class="hero-viewer-toolbar"><span id="hero-viewer-caption" aria-live="polite">Storyboard</span><div><button type="button" class="hero-zoom" aria-pressed="false">Zoom in</button><button type="button" class="hero-viewer-close" aria-label="Close storyboard viewer" autofocus>&times;</button></div></div>
-    <div class="hero-viewer-stage" tabindex="0" aria-label="Storyboard page; scroll to read when zoomed"><img alt=""></div>
+    <div class="hero-viewer-toolbar"><span id="hero-viewer-caption" aria-live="polite">Storyboard</span><div class="journal-viewer-controls"><div class="journal-viewer-steps" role="group" aria-label="Image magnification"><button type="button" class="journal-viewer-minus" aria-label="Zoom out" aria-disabled="true">&minus;</button><output aria-label="Zoom percentage" aria-live="off">100%</output><button type="button" class="journal-viewer-plus" aria-label="Increase zoom">+</button></div><button type="button" class="journal-viewer-zoom" aria-pressed="false">Zoom in</button><button type="button" class="journal-viewer-close" aria-label="Close storyboard viewer" autofocus>&times;</button></div></div>
+    <div class="journal-viewer-stage" tabindex="0" aria-label="Storyboard page; use the wheel or pinch to zoom, and drag to pan"><div class="journal-viewer-canvas"><img alt="" draggable="false"></div></div>
     <div class="hero-viewer-navigation"><button type="button" data-hero-direction="-1" aria-label="Previous storyboard page">&#8592;</button><span>Use arrow keys to browse pages</span><button type="button" data-hero-direction="1" aria-label="Next storyboard page">&#8594;</button></div>
   </dialog>
 

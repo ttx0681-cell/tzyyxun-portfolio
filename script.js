@@ -504,9 +504,167 @@ experienceToggles.forEach(toggle => {
 });
 
 
+// Share zoom and panning across both journal image viewers.
+function setupJournalViewerZoom(viewer) {
+  const stage = viewer.querySelector('.journal-viewer-stage');
+  const canvas = stage.querySelector('.journal-viewer-canvas');
+  const image = canvas.querySelector('img');
+  const toggle = viewer.querySelector('.journal-viewer-zoom');
+  const minus = viewer.querySelector('.journal-viewer-minus');
+  const plus = viewer.querySelector('.journal-viewer-plus');
+  const percentage = viewer.querySelector('.journal-viewer-steps output');
+  const pointers = new Map();
+  const zoomStep = 0.25;
+  const maxScale = 4;
+  let scale = 1;
+
+  function stageCenter() {
+    const bounds = stage.getBoundingClientRect();
+    return {x: bounds.left + stage.clientWidth / 2, y: bounds.top + stage.clientHeight / 2};
+  }
+
+  function displayedImageBounds() {
+    const {x, y, width, height} = image.getBoundingClientRect();
+    if (scale > 1) return {x, y, width, height};
+
+    // At fit size the image uses object-fit inside a box that may be letterboxed.
+    const fit = Math.min(width / image.naturalWidth, height / image.naturalHeight);
+    const fittedWidth = image.naturalWidth * fit;
+    const fittedHeight = image.naturalHeight * fit;
+    return {
+      x: x + (width - fittedWidth) / 2,
+      y: y + (height - fittedHeight) / 2,
+      width: fittedWidth,
+      height: fittedHeight
+    };
+  }
+
+  function updateZoomControls() {
+    const zoomed = scale > 1;
+    toggle.setAttribute('aria-pressed', String(zoomed));
+    toggle.textContent = zoomed ? 'Fit page' : 'Zoom in';
+    minus.setAttribute('aria-disabled', String(!zoomed));
+    plus.setAttribute('aria-disabled', String(scale === maxScale));
+    percentage.value = Math.round(scale * 100) + '%';
+    stage.classList.toggle('is-panning', zoomed && pointers.size === 1);
+  }
+
+  function setScale(requestedScale, anchor = stageCenter(), destination = anchor) {
+    const nextScale = Math.min(maxScale, Math.max(1, requestedScale));
+    if (nextScale === 1) {
+      scale = 1;
+      stage.classList.remove('is-zoomed');
+      canvas.style.removeProperty('--image-width');
+      canvas.style.removeProperty('--image-height');
+      stage.scrollTo({left: 0, top: 0, behavior: 'instant'});
+      updateZoomControls();
+      return;
+    }
+    if (!image.naturalWidth || !stage.offsetWidth || !stage.offsetHeight) return;
+
+    const before = displayedImageBounds();
+    const imageX = Math.min(1, Math.max(0, (anchor.x - before.x) / before.width));
+    const imageY = Math.min(1, Math.max(0, (anchor.y - before.y) / before.height));
+    const inset = parseFloat(getComputedStyle(stage).getPropertyValue('--viewer-fit-inset'));
+    const fit = Math.min(
+      (stage.offsetWidth - inset * 2) / image.naturalWidth,
+      (stage.offsetHeight - inset * 2) / image.naturalHeight
+    );
+    if (fit <= 0) return;
+
+    scale = nextScale;
+    stage.classList.add('is-zoomed');
+    canvas.style.setProperty('--image-width', image.naturalWidth * fit * scale + 'px');
+    canvas.style.setProperty('--image-height', image.naturalHeight * fit * scale + 'px');
+    const after = displayedImageBounds();
+    stage.scrollBy({
+      left: after.x + imageX * after.width - destination.x,
+      top: after.y + imageY * after.height - destination.y,
+      behavior: 'instant'
+    });
+    updateZoomControls();
+  }
+
+  function resetZoom() {
+    const captured = [...pointers.keys()];
+    pointers.clear();
+    captured.forEach(id => {
+      if (stage.hasPointerCapture(id)) stage.releasePointerCapture(id);
+    });
+    setScale(1);
+  }
+
+  function pinchBetween(first, second) {
+    return {
+      x: (first.x + second.x) / 2,
+      y: (first.y + second.y) / 2,
+      distance: Math.hypot(first.x - second.x, first.y - second.y)
+    };
+  }
+
+  stage.addEventListener('pointerdown', event => {
+    if (event.button !== 0 || pointers.size >= 2 ||
+        (event.pointerType !== 'touch' && (scale === 1 || pointers.size || event.target !== image))) return;
+
+    event.preventDefault();
+    stage.focus({preventScroll: true});
+    stage.setPointerCapture(event.pointerId);
+    pointers.set(event.pointerId, {x: event.clientX, y: event.clientY});
+    updateZoomControls();
+  });
+
+  stage.addEventListener('pointermove', event => {
+    const previous = pointers.get(event.pointerId);
+    if (!previous) return;
+    const current = {x: event.clientX, y: event.clientY};
+    const other = [...pointers.entries()].find(([id]) => id !== event.pointerId)?.[1];
+    pointers.set(event.pointerId, current);
+
+    if (other) {
+      const before = pinchBetween(previous, other);
+      const after = pinchBetween(current, other);
+      if (before.distance > 0) {
+        setScale(scale * after.distance / before.distance, before, after);
+      }
+    } else if (scale > 1) {
+      stage.scrollBy({left: previous.x - current.x, top: previous.y - current.y, behavior: 'instant'});
+    }
+  });
+
+  ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(type => {
+    stage.addEventListener(type, event => {
+      if (pointers.delete(event.pointerId)) updateZoomControls();
+    });
+  });
+
+  stage.addEventListener('wheel', event => {
+    event.preventDefault();
+    const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? stage.clientHeight : 1;
+    const factor = Math.exp(-event.deltaY * unit * 0.002);
+    setScale(scale * factor, {x: event.clientX, y: event.clientY});
+  }, {passive: false});
+
+  minus.addEventListener('click', () => setScale(scale - zoomStep));
+  plus.addEventListener('click', () => setScale(scale + zoomStep));
+  toggle.addEventListener('click', () => {
+    if (scale > 1) resetZoom();
+    else setScale(2);
+  });
+
+  new ResizeObserver(() => {
+    if (scale > 1) setScale(scale);
+  }).observe(stage, {box: 'border-box'});
+
+  viewer.addEventListener('close', () => {
+    if (!viewer.open) resetZoom();
+  });
+  return resetZoom;
+}
+
 // Isolated Pawfect Match journal and nested image viewer.
 const pawfectDialog = document.querySelector('#pawfect-dialog');
 const pawfectViewer = document.querySelector('#pawfect-viewer');
+const resetPawfectZoom = setupJournalViewerZoom(pawfectViewer);
 let pawfectPageState = null;
 let pawfectImageTrigger = null;
 let pawfectImages = [];
@@ -541,8 +699,9 @@ pawfectDialog.addEventListener('close', () => {
 pawfectDialog.querySelector('.pawfect-close').addEventListener('click', closePawfectStudy);
 pawfectDialog.addEventListener('cancel', event => { event.preventDefault(); closePawfectStudy(); });
 function renderPawfectImage() {
+  resetPawfectZoom();
   const source = pawfectImages[pawfectImageIndex];
-  const image = pawfectViewer.querySelector('.pawfect-viewer-image');
+  const image = pawfectViewer.querySelector('.journal-viewer-stage img');
   image.src = source.dataset.pawfectImage || source.getAttribute('href');
   image.alt = source.querySelector('img')?.alt || source.dataset.caption;
   const caption = source.dataset.caption || source.closest('figure').querySelector('figcaption').textContent;
@@ -557,7 +716,7 @@ pawfectDialog.addEventListener('click', event => {
   pawfectImageTrigger = trigger;
   renderPawfectImage();
   pawfectViewer.showModal();
-  pawfectViewer.querySelector('.pawfect-close').focus({preventScroll:true});
+  pawfectViewer.querySelector('.journal-viewer-close').focus({preventScroll:true});
 });
 function movePawfectImage(direction) {
   if (pawfectImages.length < 2) return;
@@ -565,7 +724,7 @@ function movePawfectImage(direction) {
   renderPawfectImage();
 }
 pawfectViewer.querySelectorAll('[data-direction]').forEach(button => button.addEventListener('click', () => movePawfectImage(Number(button.dataset.direction))));
-pawfectViewer.querySelector('.pawfect-close').addEventListener('click', () => pawfectViewer.close());
+pawfectViewer.querySelector('.journal-viewer-close').addEventListener('click', () => pawfectViewer.close());
 pawfectViewer.addEventListener('cancel', event => { event.preventDefault(); event.stopPropagation(); pawfectViewer.close(); });
 pawfectViewer.addEventListener('close', () => {
   if (pawfectViewer.open) return;
@@ -590,6 +749,7 @@ pawfectViewer.addEventListener('keydown', event => {
     return;
   }
   if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    if (event.target.matches('.journal-viewer-stage.is-zoomed')) return;
     event.preventDefault(); movePawfectImage(event.key === 'ArrowLeft' ? -1 : 1);
   }
 });
@@ -624,8 +784,8 @@ pawfectViewer.addEventListener('keydown', event => {
 projectDialog.append(document.querySelector('#hero-template').content.cloneNode(true));
 const heroViewer = document.querySelector('#hero-viewer');
 const heroPages = [...projectDialog.querySelectorAll('[data-storyboard]')];
-const heroStage = heroViewer.querySelector('.hero-viewer-stage');
-const heroZoom = heroViewer.querySelector('.hero-zoom');
+const heroStage = heroViewer.querySelector('.journal-viewer-stage');
+const resetHeroZoom = setupJournalViewerZoom(heroViewer);
 let heroPageIndex = 0;
 let heroPageTrigger = null;
 function renderHeroPage() {
@@ -634,10 +794,7 @@ function renderHeroPage() {
   image.src = page.dataset.storyboard;
   image.alt = page.querySelector('img').alt;
   heroViewer.querySelector('#hero-viewer-caption').textContent = `Storyboard / Page ${page.dataset.page} of 05`;
-  heroStage.classList.remove('is-zoomed');
-  heroStage.scrollTo(0, 0);
-  heroZoom.setAttribute('aria-pressed', 'false');
-  heroZoom.textContent = 'Zoom in';
+  resetHeroZoom();
 }
 projectDialog.addEventListener('click', event => {
   const page = event.target.closest('[data-storyboard]');
@@ -646,19 +803,14 @@ projectDialog.addEventListener('click', event => {
   heroPageTrigger = page;
   renderHeroPage();
   heroViewer.showModal();
-  heroViewer.querySelector('.hero-viewer-close').focus({preventScroll:true});
+  heroViewer.querySelector('.journal-viewer-close').focus({preventScroll:true});
 });
 function moveHeroPage(direction) {
   heroPageIndex = (heroPageIndex + direction + heroPages.length) % heroPages.length;
   renderHeroPage();
 }
 heroViewer.querySelectorAll('[data-hero-direction]').forEach(button => button.addEventListener('click', () => moveHeroPage(Number(button.dataset.heroDirection))));
-heroZoom.addEventListener('click', () => {
-  const zoomed = heroStage.classList.toggle('is-zoomed');
-  heroZoom.setAttribute('aria-pressed', String(zoomed));
-  heroZoom.textContent = zoomed ? 'Fit page' : 'Zoom in';
-});
-heroViewer.querySelector('.hero-viewer-close').addEventListener('click', () => heroViewer.close());
+heroViewer.querySelector('.journal-viewer-close').addEventListener('click', () => heroViewer.close());
 heroViewer.addEventListener('cancel', event => { event.preventDefault(); event.stopPropagation(); heroViewer.close(); });
 heroViewer.addEventListener('close', () => { if (!heroViewer.open && projectDialog.open) heroPageTrigger?.focus({preventScroll:true}); });
 heroViewer.addEventListener('keydown', event => {
@@ -713,7 +865,7 @@ projectDialog.addEventListener('click', event => {
   projectDialog.style.overflow = 'hidden';
   // showModal places this viewer above the journal in the browser's top layer.
   pawfectViewer.showModal();
-  pawfectViewer.querySelector('.pawfect-close').focus({preventScroll:true});
+  pawfectViewer.querySelector('.journal-viewer-close').focus({preventScroll:true});
 });
 projectDialog.addEventListener('close', () => {
   if (!projectDialog.open && mappingViewerState && pawfectViewer.open) pawfectViewer.close();

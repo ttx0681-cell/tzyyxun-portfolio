@@ -1212,9 +1212,7 @@ main { overflow-x: clip; }
 #pawfect-viewer { width:min(1100px,calc(100% - 24px)); max-width:none; max-height:90vh; max-height:90dvh; margin:auto; padding:0; border:1px solid #e3d8c9; border-radius:16px; background:#faf6ed; color:#4a382e; box-shadow:0 18px 65px #30292030; overflow:auto; overscroll-behavior:contain; }
 #pawfect-viewer::backdrop { background:#30292080; backdrop-filter:blur(4px); }
 #pawfect-viewer .pawfect-viewer-toolbar { position:sticky; top:0; z-index:2; display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:66px; padding:10px 24px; background:#faf6ed; border-bottom:1px solid #e3d8c9; color:#536d55; font-size:11px; letter-spacing:.12em; }
-#pawfect-viewer .pawfect-close { position:static; flex:none; width:44px; height:44px; padding:0; border:1px solid #b4bda5; border-radius:50%; background:#edf0e5; color:#4a382e; font:28px/1 Arial,sans-serif; cursor:pointer; }
-#pawfect-viewer button:focus-visible { outline:3px solid #536d55; outline-offset:4px; }
-#pawfect-viewer .pawfect-viewer-image { display:block; width:calc(100% - 32px); height:calc(90vh - 190px); height:calc(90dvh - 190px); margin:16px auto; object-fit:contain; }
+#pawfect-viewer :is(button, .journal-viewer-stage):focus-visible { outline:3px solid #536d55; outline-offset:4px; }
 #pawfect-viewer .pawfect-viewer-navigation { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:0 20px 18px; }
 #pawfect-viewer .pawfect-viewer-navigation p { margin:0; font-size:12px; line-height:1.5; text-align:center; }
 #pawfect-viewer [data-direction] { flex:none; width:44px; height:44px; border:1px solid #b4bda5; border-radius:50%; background:#edf0e5; color:#536d55; font-size:22px; cursor:pointer; }
@@ -1321,12 +1319,37 @@ main { overflow-x: clip; }
 #hero-viewer { width:min(1200px,calc(100% - 24px)); max-width:none; max-height:94vh; max-height:94dvh; margin:auto; padding:0; border:1px solid #E5D8C6; border-radius:14px; background:#FAF6EC; color:#493326; overflow:hidden; }
 #hero-viewer::backdrop { background:#30292099; backdrop-filter:blur(4px); }
 #hero-viewer .hero-viewer-toolbar { display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:66px; padding:10px 20px; border-bottom:1px solid #E5D8C6; color:#596B4B; font-size:13px; }
-#hero-viewer .hero-viewer-toolbar > div { display:flex; gap:12px; align-items:center; }
-#hero-viewer button { min-height:44px; padding:8px 14px; border:1px solid #a6ad91; border-radius:6px; background:#edf0e5; color:#493326; cursor:pointer; }
-#hero-viewer .hero-viewer-close { width:44px; height:44px; padding:0; border-radius:50%; font:28px/1 Arial,sans-serif; }
-#hero-viewer .hero-viewer-stage { height:calc(94vh - 145px); height:calc(94dvh - 145px); overflow:auto; overscroll-behavior:contain; }
-#hero-viewer .hero-viewer-stage img { display:block; width:100%; height:100%; object-fit:contain; }
-#hero-viewer .hero-viewer-stage.is-zoomed img { width:max(100%,1080px); max-width:none; height:auto; object-fit:contain; }
+#hero-viewer button, #pawfect-viewer .journal-viewer-controls button { min-height:44px; padding:8px 14px; border:1px solid #a6ad91; border-radius:6px; background:#edf0e5; color:#493326; cursor:pointer; }
+#hero-viewer[open], #pawfect-viewer[open] { display:flex; flex-direction:column; overflow:hidden; }
+.journal-viewer-controls { display:flex; flex:none; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:6px; max-width:100%; margin-inline-start:auto; font:13px/1.7 Arial,Helvetica,sans-serif; letter-spacing:normal; }
+#hero-viewer .journal-viewer-close, #pawfect-viewer .journal-viewer-close { width:44px; height:44px; padding:0; border-radius:50%; font:28px/1 Arial,sans-serif; }
+@media (hover:hover) {
+  #hero-viewer .journal-viewer-controls button:hover, #pawfect-viewer .journal-viewer-controls button:hover { background:#dde3d1; border-color:#72835f; }
+}
+#hero-viewer .hero-viewer-toolbar, #pawfect-viewer .pawfect-viewer-toolbar { flex-wrap:wrap; row-gap:6px; }
+.journal-viewer-steps { display:flex; align-items:center; gap:4px; }
+#hero-viewer .journal-viewer-steps button, #pawfect-viewer .journal-viewer-steps button { width:44px; padding:0; font-size:18px; }
+.journal-viewer-steps output { min-width:4ch; text-align:center; font-variant-numeric:tabular-nums; }
+#hero-viewer .journal-viewer-steps button[aria-disabled="true"],
+#pawfect-viewer .journal-viewer-steps button[aria-disabled="true"] { opacity:.5; cursor:default; background:#edf0e5; border-color:#a6ad91; }
+.journal-viewer-stage { --viewer-fit-inset:0px; min-height:0; overflow:hidden; overflow-anchor:none; overscroll-behavior:contain; touch-action:none; }
+#hero-viewer .journal-viewer-stage:focus-visible, #pawfect-viewer .journal-viewer-stage:focus-visible { outline-offset:-4px; }
+.journal-viewer-canvas { width:100%; height:100%; padding:var(--viewer-fit-inset); }
+.journal-viewer-canvas img { display:block; width:100%; height:100%; object-fit:contain; }
+.journal-viewer-stage.is-zoomed { overflow:auto; user-select:none; -webkit-user-select:none; }
+.is-zoomed .journal-viewer-canvas {
+  display:grid;
+  place-items:center;
+  width:max(100%, var(--image-width));
+  height:max(100%, var(--image-height));
+  padding:0;
+}
+.is-zoomed .journal-viewer-canvas img { width:var(--image-width); height:var(--image-height); max-width:none; cursor:grab; }
+.journal-viewer-stage.is-panning, .journal-viewer-stage.is-panning img { cursor:grabbing; }
+#pawfect-viewer .journal-viewer-stage { --viewer-fit-inset:16px; height:calc(90vh - 158px); height:calc(90dvh - 158px); }
+#hero-viewer :is(.hero-viewer-toolbar, .hero-viewer-navigation),
+#pawfect-viewer :is(.pawfect-viewer-toolbar, .pawfect-viewer-navigation) { flex-shrink:0; }
+#hero-viewer .journal-viewer-stage { height:calc(94vh - 145px); height:calc(94dvh - 145px); }
 #hero-viewer .hero-viewer-navigation { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 20px; border-top:1px solid #E5D8C6; font-size:12px; }
 @media(hover:hover) { #project-dialog.hero-journal .dialog-close:hover { background:#DDE3D1; border-color:#72835F; transform:scale(1.08); } }
 @media(max-width:850px) { #project-dialog.hero-journal .hero-highlights { grid-template-columns:minmax(0,1fr); } }
